@@ -170,6 +170,11 @@ namespace WindowsFormsApp1
         {
             PopulateCustomListWithResidents();
         }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
     public class ResidentData
     {

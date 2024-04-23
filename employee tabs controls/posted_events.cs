@@ -21,5 +21,10 @@ namespace WindowsFormsApp1.employee_tabs_controls
         {
 
         }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

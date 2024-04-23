@@ -72,7 +72,7 @@
             this.accName_btn.Location = new System.Drawing.Point(0, 0);
             this.accName_btn.Margin = new System.Windows.Forms.Padding(0);
             this.accName_btn.Name = "accName_btn";
-            this.accName_btn.Size = new System.Drawing.Size(200, 50);
+            this.accName_btn.Size = new System.Drawing.Size(300, 77);
             this.accName_btn.TabIndex = 0;
             this.accName_btn.Text = "Account Name";
             this.accName_btn.UseVisualStyleBackColor = false;
@@ -87,10 +87,10 @@
             this.logOut_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logOut_btn.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logOut_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
-            this.logOut_btn.Location = new System.Drawing.Point(35, 160);
-            this.logOut_btn.Margin = new System.Windows.Forms.Padding(35, 10, 10, 10);
+            this.logOut_btn.Location = new System.Drawing.Point(52, 246);
+            this.logOut_btn.Margin = new System.Windows.Forms.Padding(52, 15, 15, 15);
             this.logOut_btn.Name = "logOut_btn";
-            this.logOut_btn.Size = new System.Drawing.Size(125, 25);
+            this.logOut_btn.Size = new System.Drawing.Size(188, 38);
             this.logOut_btn.TabIndex = 0;
             this.logOut_btn.Text = "Log out";
             this.logOut_btn.UseVisualStyleBackColor = false;
@@ -100,10 +100,10 @@
             // 
             this.panel6.Controls.Add(this.inbox_btn);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 50);
+            this.panel6.Location = new System.Drawing.Point(0, 77);
             this.panel6.Margin = new System.Windows.Forms.Padding(0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(200, 50);
+            this.panel6.Size = new System.Drawing.Size(300, 77);
             this.panel6.TabIndex = 3;
             // 
             // inbox_btn
@@ -118,7 +118,7 @@
             this.inbox_btn.Location = new System.Drawing.Point(0, 0);
             this.inbox_btn.Margin = new System.Windows.Forms.Padding(0);
             this.inbox_btn.Name = "inbox_btn";
-            this.inbox_btn.Size = new System.Drawing.Size(200, 50);
+            this.inbox_btn.Size = new System.Drawing.Size(300, 77);
             this.inbox_btn.TabIndex = 0;
             this.inbox_btn.Text = "Inbox";
             this.inbox_btn.UseVisualStyleBackColor = false;
@@ -127,10 +127,10 @@
             // 
             this.panel8.Controls.Add(this.makeAnsmnt_btn);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Location = new System.Drawing.Point(0, 100);
+            this.panel8.Location = new System.Drawing.Point(0, 154);
             this.panel8.Margin = new System.Windows.Forms.Padding(0);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(200, 50);
+            this.panel8.Size = new System.Drawing.Size(300, 77);
             this.panel8.TabIndex = 3;
             // 
             // makeAnsmnt_btn
@@ -145,7 +145,7 @@
             this.makeAnsmnt_btn.Location = new System.Drawing.Point(0, 0);
             this.makeAnsmnt_btn.Margin = new System.Windows.Forms.Padding(0);
             this.makeAnsmnt_btn.Name = "makeAnsmnt_btn";
-            this.makeAnsmnt_btn.Size = new System.Drawing.Size(200, 50);
+            this.makeAnsmnt_btn.Size = new System.Drawing.Size(300, 77);
             this.makeAnsmnt_btn.TabIndex = 0;
             this.makeAnsmnt_btn.Text = "Make Announcement";
             this.makeAnsmnt_btn.UseVisualStyleBackColor = false;
@@ -159,10 +159,10 @@
             this.container.Controls.Add(this.panel6);
             this.container.Controls.Add(this.panel8);
             this.container.Controls.Add(this.logOut_btn);
-            this.container.Location = new System.Drawing.Point(680, 26);
+            this.container.Location = new System.Drawing.Point(1020, 40);
             this.container.Margin = new System.Windows.Forms.Padding(0);
             this.container.Name = "container";
-            this.container.Size = new System.Drawing.Size(200, 50);
+            this.container.Size = new System.Drawing.Size(300, 77);
             this.container.TabIndex = 2;
             // 
             // accPanel
@@ -172,7 +172,7 @@
             this.accPanel.Location = new System.Drawing.Point(0, 0);
             this.accPanel.Margin = new System.Windows.Forms.Padding(0);
             this.accPanel.Name = "accPanel";
-            this.accPanel.Size = new System.Drawing.Size(200, 50);
+            this.accPanel.Size = new System.Drawing.Size(300, 77);
             this.accPanel.TabIndex = 0;
             // 
             // accounttabexpand
@@ -200,7 +200,7 @@
             this.docReq_btn.Location = new System.Drawing.Point(0, 0);
             this.docReq_btn.Margin = new System.Windows.Forms.Padding(0);
             this.docReq_btn.Name = "docReq_btn";
-            this.docReq_btn.Size = new System.Drawing.Size(170, 50);
+            this.docReq_btn.Size = new System.Drawing.Size(255, 77);
             this.docReq_btn.TabIndex = 3;
             this.docReq_btn.Text = "Document Request";
             this.docReq_btn.UseVisualStyleBackColor = false;
@@ -212,10 +212,10 @@
             this.panel2.Controls.Add(this.panel1);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.panel3);
-            this.panel2.Location = new System.Drawing.Point(0, 26);
+            this.panel2.Location = new System.Drawing.Point(0, 40);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(680, 50);
+            this.panel2.Size = new System.Drawing.Size(1020, 77);
             this.panel2.TabIndex = 3;
             // 
             // Blotters
@@ -223,10 +223,10 @@
             this.Blotters.Controls.Add(this.Blotter_btn);
             this.Blotters.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.Blotters.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Blotters.Location = new System.Drawing.Point(510, 0);
+            this.Blotters.Location = new System.Drawing.Point(765, 0);
             this.Blotters.Margin = new System.Windows.Forms.Padding(0);
             this.Blotters.Name = "Blotters";
-            this.Blotters.Size = new System.Drawing.Size(170, 50);
+            this.Blotters.Size = new System.Drawing.Size(255, 77);
             this.Blotters.TabIndex = 7;
             // 
             // Blotter_btn
@@ -241,7 +241,7 @@
             this.Blotter_btn.Location = new System.Drawing.Point(0, 0);
             this.Blotter_btn.Margin = new System.Windows.Forms.Padding(0);
             this.Blotter_btn.Name = "Blotter_btn";
-            this.Blotter_btn.Size = new System.Drawing.Size(170, 50);
+            this.Blotter_btn.Size = new System.Drawing.Size(255, 77);
             this.Blotter_btn.TabIndex = 3;
             this.Blotter_btn.Text = "Blotters";
             this.Blotter_btn.UseVisualStyleBackColor = false;
@@ -250,20 +250,20 @@
             // 
             this.panel1.Controls.Add(this.docReq_btn);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(340, 0);
+            this.panel1.Location = new System.Drawing.Point(510, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(170, 50);
+            this.panel1.Size = new System.Drawing.Size(255, 77);
             this.panel1.TabIndex = 4;
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.Summaries);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel4.Location = new System.Drawing.Point(170, 0);
+            this.panel4.Location = new System.Drawing.Point(255, 0);
             this.panel4.Margin = new System.Windows.Forms.Padding(0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(170, 50);
+            this.panel4.Size = new System.Drawing.Size(255, 77);
             this.panel4.TabIndex = 6;
             // 
             // Summaries
@@ -278,7 +278,7 @@
             this.Summaries.Location = new System.Drawing.Point(0, 0);
             this.Summaries.Margin = new System.Windows.Forms.Padding(0);
             this.Summaries.Name = "Summaries";
-            this.Summaries.Size = new System.Drawing.Size(170, 50);
+            this.Summaries.Size = new System.Drawing.Size(255, 77);
             this.Summaries.TabIndex = 3;
             this.Summaries.Text = "Summaries";
             this.Summaries.UseVisualStyleBackColor = false;
@@ -290,7 +290,7 @@
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(170, 50);
+            this.panel3.Size = new System.Drawing.Size(255, 77);
             this.panel3.TabIndex = 5;
             // 
             // posted_eve_btn
@@ -305,7 +305,7 @@
             this.posted_eve_btn.Location = new System.Drawing.Point(0, 0);
             this.posted_eve_btn.Margin = new System.Windows.Forms.Padding(0);
             this.posted_eve_btn.Name = "posted_eve_btn";
-            this.posted_eve_btn.Size = new System.Drawing.Size(170, 50);
+            this.posted_eve_btn.Size = new System.Drawing.Size(255, 77);
             this.posted_eve_btn.TabIndex = 3;
             this.posted_eve_btn.Text = "Events";
             this.posted_eve_btn.UseVisualStyleBackColor = false;
@@ -314,10 +314,12 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 79);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(4, 122);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(872, 398);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1308, 612);
             this.flowLayoutPanel1.TabIndex = 6;
+            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // gradientPanel1
             // 
@@ -325,20 +327,20 @@
             this.gradientPanel1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
             this.gradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.gradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.gradientPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gradientPanel1.Name = "gradientPanel1";
-            this.gradientPanel1.Size = new System.Drawing.Size(878, 26);
+            this.gradientPanel1.Size = new System.Drawing.Size(1317, 40);
             this.gradientPanel1.TabIndex = 5;
             // 
             // empDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(878, 475);
+            this.ClientSize = new System.Drawing.Size(1317, 731);
             this.Controls.Add(this.container);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.gradientPanel1);
             this.Controls.Add(this.panel2);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "empDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Employee\'s Dashboard";
