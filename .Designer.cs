@@ -213,13 +213,13 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox Name_tbx;
-        private System.Windows.Forms.TextBox Password_tbx;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button signin_btn;
         private System.Windows.Forms.Button cancel_btn;
         private System.Windows.Forms.Button show_btn;
         private System.Windows.Forms.Button hide_btn;
         private System.Windows.Forms.Timer opacitytimer;
+        public System.Windows.Forms.TextBox Name_tbx;
+        public System.Windows.Forms.TextBox Password_tbx;
     }
 }

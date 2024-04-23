@@ -48,6 +48,7 @@ namespace WindowsFormsApp1
         }
         private void signin_btn_Click(object sender, EventArgs e)
         {
+            Accountdetails user = retrievedata(Name_tbx.Text, Password_tbx.Text);
             MySqlConnection conn = new MySqlConnection(database);
 
             try
@@ -86,7 +87,7 @@ namespace WindowsFormsApp1
                         if (name.Equals(reader.GetString("name")) && password.Equals(reader.GetString("password")))
                         {
                             MessageBox.Show("Welcome " + name);
-                            residentDashboard resdntDashboard = new residentDashboard();
+                            residentDashboard resdntDashboard = new residentDashboard(user);
                             resdntDashboard.Show();
                             this.Hide();
                             Form1 form1 = new Form1();
@@ -141,6 +142,52 @@ namespace WindowsFormsApp1
             {
                 Opacity += .03;
             }
+        }
+        private Accountdetails retrievedata(string name, string password)
+        {
+            Accountdetails user = null;
+            try
+            {
+                MySqlConnection con = new MySqlConnection(database);
+
+                con.Open();
+                string query = "SELECT * FROM accounts WHERE name = @name and password = @password";
+                MySqlCommand com = new MySqlCommand(query, con);
+
+                com.Parameters.AddWithValue("@name", name);
+                com.Parameters.AddWithValue("@password", password);
+                MySqlDataReader reader = com.ExecuteReader();
+
+                if(reader.Read())
+                {
+                    user = new Accountdetails
+                    {
+                        _acc_ID = reader.GetInt32("accID"),
+                        _profile_pic = (byte[])reader["Profile_pic"],
+                        _fname = reader.GetString("first_name"),
+                        _Lname = reader.GetString("last_name"),
+                        _acc_name = reader.GetString("name"),
+                        _birthdate = reader.GetDateTime("Birthdate"),
+                        _age = reader.GetInt32("age"),
+                        _sex = reader.GetString("sex"),
+                        _acc_pass = reader.GetString("password"),
+                        _address = reader.GetString("Address"),
+                        _phone_no = reader.GetInt32("Telephone_no"),
+                        _voter_status = reader.GetString("Voter_status"),
+                        _marital_status = reader.GetString("Marital_status"),
+                        _no_of_fam = reader.GetInt32("No_of_fam_mem"),
+                        _mon_income = reader.GetInt32("Mon_income"),
+                        _educ_attain = reader.GetString("educational_attainment"),
+                        _occupation = reader.GetString("occupation"),
+                        _vacc_status = reader.GetString("vaccination_status"),
+                    };
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error retrievign user information" + ex.Message + "Error");
+            }
+            return user;
         }
     }
 }

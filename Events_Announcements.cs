@@ -15,10 +15,12 @@ namespace WindowsFormsApp1
 {
     public partial class residentDashboard : Form
     {
+        private Accountdetails currentuser;
         string database = "server = localhost; user = root; database = resident_database; sslMode = none;";
-        public residentDashboard()
+        public residentDashboard(Accountdetails user)
         {
             InitializeComponent();
+            this.currentuser = user;
             PopulateCustomListWithResidents();
         }
         private void addUserControl(UserControl UserControl)
@@ -28,6 +30,8 @@ namespace WindowsFormsApp1
             flowLayoutPanel1.Controls.Add(UserControl);
             UserControl.BringToFront();
         }
+
+        // this will select the value for the posting.
         private List<ResidentData> GetResidentsFromDatabase()
         {
             List<ResidentData> residents = new List<ResidentData>();
@@ -101,16 +105,28 @@ namespace WindowsFormsApp1
         {
 
         }
-        // a button for opening the account details.
+        // this will be used to get the details of the resident
+        private List<Accountdetails> Getaccountdetails()
+        {
+            List<Accountdetails> accountdetails = new List<Accountdetails>();
+            string connection = "server = localhost; user = root; database = resident_database; sslMode = none;";
+            using (MySqlConnection con = new MySqlConnection(connection))
+            {
+                string query = $"SELECT * FROM `accounts` WHERE";
+            }
+            return accountdetails;
+        }
+        // a button for opening the account dropdown.
         private void account_Click(object sender, EventArgs e)
         {
             account_btn_drpdwn_animation.Start();
         }
 
-        // this button will open a new form that would show the resident's info.
+        // this button will open a new usercontrol that would show the resident's info.
         private void button1_Click(object sender, EventArgs e)
         {
             Abt_account open = new Abt_account();
+            open.enteruserdetails(currentuser);
             addUserControl(open);
         }
         bool menuexpand = true;
@@ -179,10 +195,32 @@ namespace WindowsFormsApp1
                 account_btn_drpdwn_animation.Start();
             }
         }
-
+        //log out button
         private void Logout_btn_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+    }
+    //this classes will serve as place holder for the account data in the database.
+    public class Accountdetails
+    {
+        public int _acc_ID { get; set; }
+        public byte[] _profile_pic { get; set; }
+        public string _acc_name { get; set; }
+        public string _acc_pass { get; set; }
+        public int _phone_no { get; set; }
+        public string _fname { get; set; }
+        public string _Lname { get; set; }
+        public DateTime _birthdate { get; set; }
+        public int _age { get; set; }
+        public string _sex { get; set; }
+        public string _address { get; set; }
+        public string _voter_status { get; set; }
+        public string _marital_status { get; set; }
+        public int _no_of_fam { get; set; }
+        public int _mon_income { get; set; }
+        public string _educ_attain { get; set; }
+        public string _occupation { get; set; }
+        public string _vacc_status { get; set; }
     }
 }
