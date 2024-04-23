@@ -1,0 +1,174 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+
+namespace WindowsFormsApp1
+{
+
+    public partial class Form2 : Form
+    {
+        string database = "server = localhost; user = root; database = resident_database; sslMode = none;";
+        public Form2()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            signupoptions open = new signupoptions();
+            open.Show();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void signin_btn_Click(object sender, EventArgs e)
+        {
+
+            MySqlConnection con = new MySqlConnection(database);
+
+            string name = empfirstname_tbx.Text.ToString() + " " + emplastname_tbx.Text.ToString();
+            string lastname = emplastname_tbx.Text.ToString();
+            string firstname = empfirstname_tbx.Text.ToString();
+            string birthdate1 = empbirthdate.Text.ToString();
+            decimal ageselector = empage.Value;
+            string sex1 = empsex.Text;
+            string password = empPassword_tbx.Text.ToString();
+            string conpass = empConfirmpass_tbx.Text.ToString();
+            string empID = empID_tbx.Text.ToString(); 
+
+            string query = $"INSERT INTO `employee_database`(`primary_key`, `Employee_name`, `Birthdate`, `Age`, `Sex`, `Employee_pass`, `Employee_ID`)  VALUES ('NULL','{name}','{birthdate1}','{ageselector}','{sex1}','{password}','{empID}')";
+
+            MySqlCommand cmd = new MySqlCommand(query, con);
+
+            try
+            {
+                if (String.IsNullOrEmpty(name) || birthdate1 == null || ageselector == null || String.IsNullOrEmpty(sex1) || String.IsNullOrEmpty(password) || String.IsNullOrEmpty(conpass) || String.IsNullOrEmpty(empID))
+                {
+                    MessageBox.Show("Please fill up all empty fields");
+                }
+                else
+                {
+                    if(password == conpass)
+                    {
+                        cmd.Parameters.AddWithValue("first_name", firstname);
+                        cmd.Parameters.AddWithValue("last_name", lastname);
+                        cmd.Parameters.AddWithValue("name", name);
+                        cmd.Parameters.AddWithValue("Birthdate", birthdate1);
+                        cmd.Parameters.AddWithValue("age", ageselector);
+                        cmd.Parameters.AddWithValue("sex", sex1);
+                        cmd.Parameters.AddWithValue("password", password);
+                        cmd.Parameters.AddWithValue("Emploteep_ID", empID);
+
+                        con.Open();
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        con.Close();
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Welcome " + name + ". Please proceed to log in your account.");
+                            empfirstname_tbx.Clear();
+                            emplastname_tbx.Clear();
+                            empage.Value = 0;
+                            empbirthdate.Value = DateTimePicker.MinimumDateTime;
+                            empsex.Items.Clear();
+                            empPassword_tbx.Clear();
+                            empConfirmpass_tbx.Clear();
+                            empID_tbx.Clear();
+                        }
+                        else
+                        {
+                            MessageBox.Show("No rows were affected");
+                        }
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("The password doesn't match to the confirmed password. Please try again.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex + "Error");
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        private void cancel_btn_Click(object sender, EventArgs e)
+        {
+            empfirstname_tbx.Clear();
+            emplastname_tbx.Clear();
+            empage.Value = 0;
+            empbirthdate.Value = DateTimePicker.MinimumDateTime;
+            empsex.Items.Clear();
+            empPassword_tbx.Clear();
+            empConfirmpass_tbx.Clear();
+            empID_tbx.Clear();
+        }
+
+        private void show_btn1_Click(object sender, EventArgs e)
+        {
+            if (empPassword_tbx.PasswordChar == '*')
+            {
+                hide_btn1.BringToFront();
+                empPassword_tbx.PasswordChar = '\0';
+            }
+        }
+
+        private void hide_btn1_Click(object sender, EventArgs e)
+        {
+            if (empPassword_tbx.PasswordChar == '\0')
+            {
+                show_btn1.BringToFront();
+                empPassword_tbx.PasswordChar = '*';
+            }
+        }
+
+        private void show_btn2_Click(object sender, EventArgs e)
+        {
+            if (empConfirmpass_tbx.PasswordChar == '*')
+            {
+                hide_btn2.BringToFront();
+                empConfirmpass_tbx.PasswordChar = '\0';
+            }
+        }
+
+        private void hide_btn2_Click(object sender, EventArgs e)
+        {
+            if (empConfirmpass_tbx.PasswordChar == '\0')
+            {
+                show_btn2.BringToFront();
+                empConfirmpass_tbx.PasswordChar = '*';
+            }
+        }
+
+        private void animations_Tick(object sender, EventArgs e)
+        {
+            if (Opacity >= 1.0)
+            {
+                animations.Stop();
+            }
+            else
+            {
+                Opacity += .03;
+            }
+        }
+
+        private void empage_ValueChanged(object sender, EventArgs e)
+        {
+        }
+    }
+}
