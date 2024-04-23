@@ -78,29 +78,35 @@ namespace WindowsFormsApp1
         // this method will help populate the flowpanel with the post
         private void PopulateCustomListWithResidents()
         {
-
-            List<ResidentData> residents = GetResidentsFromDatabase();
-
-            flowLayoutPanel1.Controls.Clear();
-
-            foreach (ResidentData resident in residents)
+            try
             {
-                post_uc postUC = new post_uc();
+                List<ResidentData> residents = GetResidentsFromDatabase();
 
-                using (MemoryStream ms = new MemoryStream(resident.Image))
+                flowLayoutPanel1.Controls.Clear();
+
+                foreach (ResidentData resident in residents)
                 {
-                    ms.Seek(0, SeekOrigin.Begin);
-                    postUC.events_image_pbx.Image = Image.FromStream(ms);
+                    post_uc postUC = new post_uc();
+
+                    using (MemoryStream ms = new MemoryStream(resident.Image))
+                    {
+                        ms.Seek(0, SeekOrigin.Begin);
+                        postUC.events_image_pbx.Image = Image.FromStream(ms);
+                    }
+                    postUC.what_con_tbx.Text = resident.What;
+                    postUC.who_con_tbx.Text = resident.Who;
+                    postUC.when_con_tbx.Text = resident.When.ToString();
+                    postUC.where_con_tbx.Text = resident.Where;
+                    postUC.why_con_tbx.Text = resident.Why;
+                    postUC.how_con_tbx.Text = resident.How;
+
+
+                    flowLayoutPanel1.Controls.Add(postUC);
                 }
-                postUC.what_con_tbx.Text = resident.What;
-                postUC.who_con_tbx.Text = resident.Who;
-                postUC.when_con_tbx.Text = resident.When.ToString();
-                postUC.where_con_tbx.Text = resident.Where;
-                postUC.why_con_tbx.Text = resident.Why;
-                postUC.how_con_tbx.Text = resident.How;
-
-
-                flowLayoutPanel1.Controls.Add(postUC);
+            }
+            catch(Exception er)
+            {
+                MessageBox.Show(er + "Error");
             }
         }
 
