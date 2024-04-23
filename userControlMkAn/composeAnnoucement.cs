@@ -13,6 +13,7 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace WindowsFormsApp1.userControlMkAn
 {
+    //commit test
     public partial class composeAnnoucement : UserControl
     {
         string database = "server = localhost; user = root; database = resident_database; sslMode = none;";
