@@ -23,6 +23,70 @@ namespace WindowsFormsApp1
         {
             try
             {
+                if (user._acc_name != null)
+                {
+                    acc_name_tbx.Enabled = false;
+                }
+                if (user._acc_pass != null)
+                {
+                    pass_tbx.Enabled = false;
+                }
+                if (user._phone_no != 0)
+                {
+                    phone_num_tbx.Enabled = false;
+                }
+                if (user._fname != null)
+                {
+                    fname_tbx.Enabled = false;
+                }
+                if (user._Lname != null)
+                {
+                    Lname_tbx.Enabled = false;
+                }
+                if (user._age != 0)
+                {
+                    age_cmbx.Enabled = false;
+                }
+                if (user._birthdate.ToString() != null)
+                {
+                    birthdate_dtp.Enabled = false;
+                }
+                if (user._sex != null)
+                {
+                    acc_sex.Enabled = false;
+                }
+                if (user._voter_status != null)
+                {
+                    voter_status.Enabled = false;
+                }
+                if (user._vacc_status != null)
+                {
+                    vacc_status.Enabled = false;
+                }
+                if (user._address != null)
+                {
+                    Address_tbx.Enabled = false;
+                }
+                if (user._marital_status != null)
+                {
+                    Marital_status.Enabled = false;
+                }
+                if (user._no_of_fam != 0)
+                {
+                    num_fam.Enabled = false;
+                }
+                if (user._mon_income == 0 || user._mon_income == null)
+                {
+                    monthly_income.Enabled = false;
+                }
+                if (user._educ_attain != null)
+                {
+                    educ_attain.Enabled = false;
+                }
+                if (user._occupation != null)
+                {
+                    occupation_tbx.Enabled = false;
+                }
                 if (user._profile_pic != null && user._profile_pic.Length > 0)
                 {
                     using (MemoryStream ms = new MemoryStream(user._profile_pic))
