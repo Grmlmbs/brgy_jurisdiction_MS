@@ -102,7 +102,7 @@
             // 
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.Home);
-            this.panel1.Location = new System.Drawing.Point(0, 152);
+            this.panel1.Location = new System.Drawing.Point(0, 50);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(175, 50);
@@ -155,7 +155,7 @@
             this.Account_drpdown_pnl.Location = new System.Drawing.Point(0, 0);
             this.Account_drpdown_pnl.Margin = new System.Windows.Forms.Padding(0);
             this.Account_drpdown_pnl.Name = "Account_drpdown_pnl";
-            this.Account_drpdown_pnl.Size = new System.Drawing.Size(175, 152);
+            this.Account_drpdown_pnl.Size = new System.Drawing.Size(175, 50);
             this.Account_drpdown_pnl.TabIndex = 6;
             // 
             // panel7
@@ -271,7 +271,7 @@
             // 
             this.panel6.Controls.Add(this.pictureBox5);
             this.panel6.Controls.Add(this.Notification_btn);
-            this.panel6.Location = new System.Drawing.Point(0, 202);
+            this.panel6.Location = new System.Drawing.Point(0, 100);
             this.panel6.Margin = new System.Windows.Forms.Padding(0);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(175, 50);
@@ -317,7 +317,7 @@
             // 
             this.panel4.Controls.Add(this.pictureBox3);
             this.panel4.Controls.Add(this.req_doc_btn);
-            this.panel4.Location = new System.Drawing.Point(0, 252);
+            this.panel4.Location = new System.Drawing.Point(0, 150);
             this.panel4.Margin = new System.Windows.Forms.Padding(0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(175, 50);
@@ -363,7 +363,7 @@
             // 
             this.panel5.Controls.Add(this.pictureBox4);
             this.panel5.Controls.Add(this.Blotter_btn);
-            this.panel5.Location = new System.Drawing.Point(0, 302);
+            this.panel5.Location = new System.Drawing.Point(0, 200);
             this.panel5.Margin = new System.Windows.Forms.Padding(0);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(175, 50);
@@ -409,7 +409,7 @@
             // 
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Controls.Add(this.concern_btn);
-            this.panel3.Location = new System.Drawing.Point(0, 352);
+            this.panel3.Location = new System.Drawing.Point(0, 250);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(175, 50);

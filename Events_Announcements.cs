@@ -22,6 +22,7 @@ namespace WindowsFormsApp1
             InitializeComponent();
             this.currentuser = user;
             PopulateCustomListWithResidents();
+            account.Text = user._acc_name;
         }
         private void addUserControl(UserControl UserControl)
         {
@@ -117,7 +118,7 @@ namespace WindowsFormsApp1
             return accountdetails;
         }
         // a button for opening the account dropdown.
-        private void account_Click(object sender, EventArgs e)
+        public void account_Click(object sender, EventArgs e)
         {
             account_btn_drpdwn_animation.Start();
         }
