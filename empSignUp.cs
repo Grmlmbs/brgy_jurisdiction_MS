@@ -6,12 +6,14 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Security.Cryptography;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Runtime.CompilerServices;
 
 namespace WindowsFormsApp1
 {
-
+    // this is sign up form for the barangay employees.
     public partial class Form2 : Form
     {
         string database = "server = localhost; user = root; database = resident_database; sslMode = none;";
@@ -20,6 +22,7 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
+        // this is an exit button for the sign up form.
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -32,6 +35,7 @@ namespace WindowsFormsApp1
 
         }
 
+        // this is the code block for a sign up button that is connected to the database.
         private void signin_btn_Click(object sender, EventArgs e)
         {
 
@@ -45,9 +49,11 @@ namespace WindowsFormsApp1
             string sex1 = empsex.Text;
             string password = empPassword_tbx.Text.ToString();
             string conpass = empConfirmpass_tbx.Text.ToString();
-            string empID = empID_tbx.Text.ToString(); 
+            string empID = empID_tbx.Text.ToString();
 
-            string query = $"INSERT INTO `employee_database`(`primary_key`, `Employee_name`, `Birthdate`, `Age`, `Sex`, `Employee_pass`, `Employee_ID`)  VALUES ('NULL','{name}','{birthdate1}','{ageselector}','{sex1}','{password}','{empID}')";
+            string hashedpass = Hashhelper.Hashstring(password);
+
+            string query = $"INSERT INTO `employee_database`(`primary_key`, `Employee_name`, `Birthdate`, `Age`, `Sex`, `Employee_pass`, `Employee_ID`)  VALUES ('NULL','{name}','{birthdate1}','{ageselector}','{sex1}','{hashedpass}','{empID}')";
 
             MySqlCommand cmd = new MySqlCommand(query, con);
 
@@ -67,7 +73,7 @@ namespace WindowsFormsApp1
                         cmd.Parameters.AddWithValue("Birthdate", birthdate1);
                         cmd.Parameters.AddWithValue("age", ageselector);
                         cmd.Parameters.AddWithValue("sex", sex1);
-                        cmd.Parameters.AddWithValue("password", password);
+                        cmd.Parameters.AddWithValue("password", hashedpass);
                         cmd.Parameters.AddWithValue("Emploteep_ID", empID);
 
                         con.Open();
@@ -107,6 +113,7 @@ namespace WindowsFormsApp1
             }
         }
 
+        // this is a button that would clear every inputed fields incase the employee wants to cancel his/her registration.
         private void cancel_btn_Click(object sender, EventArgs e)
         {
             empfirstname_tbx.Clear();
@@ -169,6 +176,18 @@ namespace WindowsFormsApp1
 
         private void empage_ValueChanged(object sender, EventArgs e)
         {
+            DateTime Selecteddate = empbirthdate.Value;
+            int age = age_autofiller.CalculateAge(Selecteddate);
+
+            empage.Value = age;
+        }
+
+        private void signin_btn_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                signup_btn.PerformClick();
+            }
         }
     }
 }

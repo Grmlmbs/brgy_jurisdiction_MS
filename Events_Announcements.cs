@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp1.employee_tabs_controls;
+using WindowsFormsApp1.resident_tabs;
 
 namespace WindowsFormsApp1
 {
@@ -126,7 +127,7 @@ namespace WindowsFormsApp1
         // this button will open a new usercontrol that would show the resident's info.
         private void button1_Click(object sender, EventArgs e)
         {
-            Abt_account open = new Abt_account();
+            Resident_abt_acc open = new Resident_abt_acc();
             open.enteruserdetails(currentuser);
             addUserControl(open);
         }

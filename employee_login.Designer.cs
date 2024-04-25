@@ -79,6 +79,7 @@
             this.signin_btn.Text = "Sign in";
             this.signin_btn.UseVisualStyleBackColor = false;
             this.signin_btn.Click += new System.EventHandler(this.signin_btn_Click);
+            this.signin_btn.KeyDown += new System.Windows.Forms.KeyEventHandler(this.signin_btn_KeyDown);
             // 
             // empPassword_tbx
             // 

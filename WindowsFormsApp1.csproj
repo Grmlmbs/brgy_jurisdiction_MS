@@ -84,6 +84,7 @@
       <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -116,6 +117,12 @@
     <Compile Include="employee tabs controls\post_uc.Designer.cs">
       <DependentUpon>post_uc.cs</DependentUpon>
     </Compile>
+    <Compile Include="employee tabs controls\summaries_uc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="employee tabs controls\summaries_uc.Designer.cs">
+      <DependentUpon>summaries_uc.cs</DependentUpon>
+    </Compile>
     <Compile Include="employee_login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,14 +147,21 @@
     <Compile Include="empSignUp.Designer.cs">
       <DependentUpon>empSignUp.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
+    <Compile Include="employee_dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="employee_dashboard.Designer.cs">
+      <DependentUpon>employee_dashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="GradientPanel.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Hashhelper.cs" />
+    <Compile Include="resident_tabs\Resident_abt_acc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="resident_tabs\Resident_abt_acc.Designer.cs">
+      <DependentUpon>Resident_abt_acc.cs</DependentUpon>
     </Compile>
     <Compile Include="signup.cs">
       <SubType>Form</SubType>
@@ -191,6 +205,9 @@
     <EmbeddedResource Include="employee tabs controls\post_uc.resx">
       <DependentUpon>post_uc.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="employee tabs controls\summaries_uc.resx">
+      <DependentUpon>summaries_uc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="employee_login.resx">
       <DependentUpon>employee_login.cs</DependentUpon>
     </EmbeddedResource>
@@ -203,8 +220,11 @@
     <EmbeddedResource Include="empSignUp.resx">
       <DependentUpon>empSignUp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="employee_dashboard.resx">
+      <DependentUpon>employee_dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resident_tabs\Resident_abt_acc.resx">
+      <DependentUpon>Resident_abt_acc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="signup.resx">
       <DependentUpon>signup.cs</DependentUpon>

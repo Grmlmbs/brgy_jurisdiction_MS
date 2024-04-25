@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(signup));
             this.cancel_btn = new System.Windows.Forms.Button();
-            this.signin_btn = new System.Windows.Forms.Button();
+            this.signup_btn = new System.Windows.Forms.Button();
             this.Password_tbx = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.firstname_tbx = new System.Windows.Forms.TextBox();
@@ -41,7 +41,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.birthdate = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
-            this.age = new System.Windows.Forms.NumericUpDown();
+            this.age_numselect = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
             this.sex = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -53,7 +53,7 @@
             this.show_btn2 = new System.Windows.Forms.Button();
             this.show_btn1 = new System.Windows.Forms.Button();
             this.animation = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.age)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.age_numselect)).BeginInit();
             this.SuspendLayout();
             // 
             // cancel_btn
@@ -66,7 +66,7 @@
             this.cancel_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cancel_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(162)))), ((int)(((byte)(216)))));
             this.cancel_btn.Location = new System.Drawing.Point(143, 394);
-            this.cancel_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cancel_btn.Margin = new System.Windows.Forms.Padding(2);
             this.cancel_btn.Name = "cancel_btn";
             this.cancel_btn.Size = new System.Drawing.Size(68, 31);
             this.cancel_btn.TabIndex = 11;
@@ -74,23 +74,24 @@
             this.cancel_btn.UseVisualStyleBackColor = false;
             this.cancel_btn.Click += new System.EventHandler(this.cancel_btn_Click);
             // 
-            // signin_btn
+            // signup_btn
             // 
-            this.signin_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(162)))), ((int)(((byte)(216)))));
-            this.signin_btn.FlatAppearance.BorderSize = 0;
-            this.signin_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(162)))), ((int)(((byte)(216)))));
-            this.signin_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
-            this.signin_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.signin_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signin_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
-            this.signin_btn.Location = new System.Drawing.Point(56, 394);
-            this.signin_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.signin_btn.Name = "signin_btn";
-            this.signin_btn.Size = new System.Drawing.Size(68, 31);
-            this.signin_btn.TabIndex = 9;
-            this.signin_btn.Text = "Sign in";
-            this.signin_btn.UseVisualStyleBackColor = false;
-            this.signin_btn.Click += new System.EventHandler(this.signin_btn_Click);
+            this.signup_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(162)))), ((int)(((byte)(216)))));
+            this.signup_btn.FlatAppearance.BorderSize = 0;
+            this.signup_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(162)))), ((int)(((byte)(216)))));
+            this.signup_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
+            this.signup_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.signup_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signup_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
+            this.signup_btn.Location = new System.Drawing.Point(56, 394);
+            this.signup_btn.Margin = new System.Windows.Forms.Padding(2);
+            this.signup_btn.Name = "signup_btn";
+            this.signup_btn.Size = new System.Drawing.Size(68, 31);
+            this.signup_btn.TabIndex = 9;
+            this.signup_btn.Text = "Sign up";
+            this.signup_btn.UseVisualStyleBackColor = false;
+            this.signup_btn.Click += new System.EventHandler(this.signin_btn_Click);
+            this.signup_btn.KeyDown += new System.Windows.Forms.KeyEventHandler(this.signin_btn_KeyDown);
             // 
             // Password_tbx
             // 
@@ -100,11 +101,11 @@
             this.Password_tbx.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Password_tbx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
             this.Password_tbx.Location = new System.Drawing.Point(33, 289);
-            this.Password_tbx.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Password_tbx.Margin = new System.Windows.Forms.Padding(2);
             this.Password_tbx.Name = "Password_tbx";
             this.Password_tbx.PasswordChar = '*';
             this.Password_tbx.Size = new System.Drawing.Size(209, 19);
-            this.Password_tbx.TabIndex = 7;
+            this.Password_tbx.TabIndex = 6;
             // 
             // label3
             // 
@@ -127,10 +128,10 @@
             this.firstname_tbx.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.firstname_tbx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
             this.firstname_tbx.Location = new System.Drawing.Point(33, 101);
-            this.firstname_tbx.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.firstname_tbx.Margin = new System.Windows.Forms.Padding(2);
             this.firstname_tbx.Name = "firstname_tbx";
             this.firstname_tbx.Size = new System.Drawing.Size(209, 19);
-            this.firstname_tbx.TabIndex = 5;
+            this.firstname_tbx.TabIndex = 1;
             this.firstname_tbx.TextChanged += new System.EventHandler(this.firstname_tbx_TextChanged);
             // 
             // label2
@@ -166,10 +167,10 @@
             this.lastname_tbx.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lastname_tbx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
             this.lastname_tbx.Location = new System.Drawing.Point(33, 150);
-            this.lastname_tbx.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lastname_tbx.Margin = new System.Windows.Forms.Padding(2);
             this.lastname_tbx.Name = "lastname_tbx";
             this.lastname_tbx.Size = new System.Drawing.Size(209, 19);
-            this.lastname_tbx.TabIndex = 12;
+            this.lastname_tbx.TabIndex = 2;
             this.lastname_tbx.TextChanged += new System.EventHandler(this.lastname_tbx_TextChanged);
             // 
             // label4
@@ -196,10 +197,11 @@
             this.birthdate.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.birthdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.birthdate.Location = new System.Drawing.Point(33, 198);
-            this.birthdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.birthdate.Margin = new System.Windows.Forms.Padding(2);
             this.birthdate.Name = "birthdate";
             this.birthdate.Size = new System.Drawing.Size(139, 23);
-            this.birthdate.TabIndex = 14;
+            this.birthdate.TabIndex = 3;
+            this.birthdate.Value = new System.DateTime(2024, 4, 25, 0, 0, 0, 0);
             // 
             // label5
             // 
@@ -214,17 +216,17 @@
             this.label5.TabIndex = 15;
             this.label5.Text = "Birthdate";
             // 
-            // age
+            // age_numselect
             // 
-            this.age.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
-            this.age.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.age.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
-            this.age.Location = new System.Drawing.Point(181, 197);
-            this.age.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.age.Name = "age";
-            this.age.Size = new System.Drawing.Size(61, 24);
-            this.age.TabIndex = 16;
-            this.age.ValueChanged += new System.EventHandler(this.age_ValueChanged);
+            this.age_numselect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
+            this.age_numselect.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.age_numselect.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
+            this.age_numselect.Location = new System.Drawing.Point(181, 197);
+            this.age_numselect.Margin = new System.Windows.Forms.Padding(2);
+            this.age_numselect.Name = "age_numselect";
+            this.age_numselect.Size = new System.Drawing.Size(61, 24);
+            this.age_numselect.TabIndex = 4;
+            this.age_numselect.ValueChanged += new System.EventHandler(this.age_ValueChanged);
             // 
             // label6
             // 
@@ -250,10 +252,10 @@
             "Male ",
             "Female"});
             this.sex.Location = new System.Drawing.Point(33, 244);
-            this.sex.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sex.Margin = new System.Windows.Forms.Padding(2);
             this.sex.Name = "sex";
             this.sex.Size = new System.Drawing.Size(64, 21);
-            this.sex.TabIndex = 18;
+            this.sex.TabIndex = 5;
             // 
             // label7
             // 
@@ -276,11 +278,11 @@
             this.Confirmpass_tbx.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Confirmpass_tbx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
             this.Confirmpass_tbx.Location = new System.Drawing.Point(33, 339);
-            this.Confirmpass_tbx.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Confirmpass_tbx.Margin = new System.Windows.Forms.Padding(2);
             this.Confirmpass_tbx.Name = "Confirmpass_tbx";
             this.Confirmpass_tbx.PasswordChar = '*';
             this.Confirmpass_tbx.Size = new System.Drawing.Size(209, 19);
-            this.Confirmpass_tbx.TabIndex = 20;
+            this.Confirmpass_tbx.TabIndex = 7;
             this.Confirmpass_tbx.TextChanged += new System.EventHandler(this.Confirmpass_tbx_TextChanged);
             // 
             // label8
@@ -320,7 +322,7 @@
             this.hide_btn2.FlatAppearance.BorderSize = 0;
             this.hide_btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.hide_btn2.Location = new System.Drawing.Point(215, 339);
-            this.hide_btn2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hide_btn2.Margin = new System.Windows.Forms.Padding(2);
             this.hide_btn2.Name = "hide_btn2";
             this.hide_btn2.Size = new System.Drawing.Size(23, 19);
             this.hide_btn2.TabIndex = 25;
@@ -335,7 +337,7 @@
             this.hide_btn1.FlatAppearance.BorderSize = 0;
             this.hide_btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.hide_btn1.Location = new System.Drawing.Point(215, 289);
-            this.hide_btn1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hide_btn1.Margin = new System.Windows.Forms.Padding(2);
             this.hide_btn1.Name = "hide_btn1";
             this.hide_btn1.Size = new System.Drawing.Size(23, 19);
             this.hide_btn1.TabIndex = 27;
@@ -350,7 +352,7 @@
             this.show_btn2.FlatAppearance.BorderSize = 0;
             this.show_btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.show_btn2.Location = new System.Drawing.Point(215, 339);
-            this.show_btn2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.show_btn2.Margin = new System.Windows.Forms.Padding(2);
             this.show_btn2.Name = "show_btn2";
             this.show_btn2.Size = new System.Drawing.Size(23, 19);
             this.show_btn2.TabIndex = 26;
@@ -365,7 +367,7 @@
             this.show_btn1.FlatAppearance.BorderSize = 0;
             this.show_btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.show_btn1.Location = new System.Drawing.Point(215, 289);
-            this.show_btn1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.show_btn1.Margin = new System.Windows.Forms.Padding(2);
             this.show_btn1.Name = "show_btn1";
             this.show_btn1.Size = new System.Drawing.Size(23, 19);
             this.show_btn1.TabIndex = 28;
@@ -394,26 +396,26 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.sex);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.age);
+            this.Controls.Add(this.age_numselect);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.birthdate);
             this.Controls.Add(this.lastname_tbx);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.cancel_btn);
-            this.Controls.Add(this.signin_btn);
+            this.Controls.Add(this.signup_btn);
             this.Controls.Add(this.Password_tbx);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.firstname_tbx);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "signup";
             this.Opacity = 0D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "signup";
             this.TopMost = true;
-            ((System.ComponentModel.ISupportInitialize)(this.age)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.age_numselect)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -422,7 +424,7 @@
         #endregion
 
         private System.Windows.Forms.Button cancel_btn;
-        private System.Windows.Forms.Button signin_btn;
+        private System.Windows.Forms.Button signup_btn;
         private System.Windows.Forms.TextBox Password_tbx;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox firstname_tbx;
@@ -432,7 +434,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker birthdate;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.NumericUpDown age;
+        private System.Windows.Forms.NumericUpDown age_numselect;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox sex;
         private System.Windows.Forms.Label label7;

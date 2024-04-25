@@ -187,6 +187,15 @@ namespace WindowsFormsApp1
         public string Where { get; set; }
         public string Why { get; set; }
         public string How { get; set; }
-
+    }
+    public class employee_acc_details
+    {
+        public int primary_key { get; set; }
+        public string emp_name { get; set; }
+        public string emp_pass { get; set; }
+        public DateTime emp_birthdate { get; set; }
+        public int emp_age { get; set; }
+        public string emp_sex { get; set; }
+        public int emp_ID { get; set; }
     }
 }
