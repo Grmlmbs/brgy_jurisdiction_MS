@@ -14,6 +14,8 @@ namespace WindowsFormsApp1
 {
     public partial class Abt_account : UserControl
     {
+        string database = "server = localhost; user = root; database = resident_database; sslMode = none;";
+        bool monthlyincome;
         public Abt_account()
         {
             InitializeComponent();
@@ -75,10 +77,6 @@ namespace WindowsFormsApp1
                 {
                     num_fam.Enabled = false;
                 }
-                if (user._mon_income == 0 || user._mon_income == null)
-                {
-                    monthly_income.Enabled = false;
-                }
                 if (user._educ_attain != null)
                 {
                     educ_attain.Enabled = false;
@@ -94,6 +92,7 @@ namespace WindowsFormsApp1
                         ms.Seek(0, SeekOrigin.Begin);
                         profile_pic_pbx.Image = Image.FromStream(ms);
                     }
+                    profile_upload_btn.Enabled = false;
                 }
                 acc_name_tbx.Text = user._acc_name;
                 pass_tbx.Text = user._acc_pass;
@@ -125,6 +124,32 @@ namespace WindowsFormsApp1
         private void Abt_account_Load(object sender, EventArgs e)
         {
 
+        }
+
+        // button for uploading picture to the database. 
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        // button for selecting image tto be uploaded to the picturebox.
+        private void profile_upload_btn_Click(object sender, EventArgs e)
+        {
+            string imageLocation = "";
+            try
+            {
+                OpenFileDialog dialog = new OpenFileDialog();
+                dialog.Filter = "jpg files(*.jpg)|*.jpg| PNG files (*.png)|*.png| All Files(*.*)|*.*";
+                if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    imageLocation = dialog.FileName;
+                    profile_pic_pbx.ImageLocation = imageLocation;
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("An Error Occured", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

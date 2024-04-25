@@ -89,10 +89,11 @@
             this.Home.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
             this.Home.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.Home.Location = new System.Drawing.Point(0, 0);
+            this.Home.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Home.Name = "Home";
-            this.Home.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            this.Home.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.Home.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Home.Size = new System.Drawing.Size(175, 50);
+            this.Home.Size = new System.Drawing.Size(262, 77);
             this.Home.TabIndex = 0;
             this.Home.Text = "        Home";
             this.Home.UseVisualStyleBackColor = false;
@@ -102,21 +103,21 @@
             // 
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.Home);
-            this.panel1.Location = new System.Drawing.Point(0, 50);
+            this.panel1.Location = new System.Drawing.Point(0, 77);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(175, 50);
+            this.panel1.Size = new System.Drawing.Size(262, 77);
             this.panel1.TabIndex = 1;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(10, 10);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(10);
+            this.pictureBox1.Location = new System.Drawing.Point(15, 15);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Padding = new System.Windows.Forms.Padding(10);
-            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox1.Padding = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.pictureBox1.Size = new System.Drawing.Size(45, 46);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -126,8 +127,9 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(878, 32);
+            this.panel2.Size = new System.Drawing.Size(1317, 49);
             this.panel2.TabIndex = 2;
             // 
             // flowLayoutPanel2
@@ -140,10 +142,10 @@
             this.flowLayoutPanel2.Controls.Add(this.panel5);
             this.flowLayoutPanel2.Controls.Add(this.panel3);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 32);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 49);
             this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(175, 443);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(262, 682);
             this.flowLayoutPanel2.TabIndex = 3;
             // 
             // Account_drpdown_pnl
@@ -155,7 +157,7 @@
             this.Account_drpdown_pnl.Location = new System.Drawing.Point(0, 0);
             this.Account_drpdown_pnl.Margin = new System.Windows.Forms.Padding(0);
             this.Account_drpdown_pnl.Name = "Account_drpdown_pnl";
-            this.Account_drpdown_pnl.Size = new System.Drawing.Size(175, 50);
+            this.Account_drpdown_pnl.Size = new System.Drawing.Size(262, 77);
             this.Account_drpdown_pnl.TabIndex = 6;
             // 
             // panel7
@@ -165,18 +167,18 @@
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Margin = new System.Windows.Forms.Padding(0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(175, 50);
+            this.panel7.Size = new System.Drawing.Size(262, 77);
             this.panel7.TabIndex = 2;
             // 
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(10, 10);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(10);
+            this.pictureBox6.Location = new System.Drawing.Point(15, 15);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Padding = new System.Windows.Forms.Padding(10);
-            this.pictureBox6.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox6.Padding = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.pictureBox6.Size = new System.Drawing.Size(45, 46);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 1;
             this.pictureBox6.TabStop = false;
@@ -194,12 +196,13 @@
             this.account.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
             this.account.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.account.Location = new System.Drawing.Point(0, 0);
+            this.account.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.account.Name = "account";
-            this.account.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
-            this.account.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.account.Size = new System.Drawing.Size(175, 50);
+            this.account.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.account.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.account.Size = new System.Drawing.Size(262, 77);
             this.account.TabIndex = 0;
-            this.account.Text = "        Account";
+            this.account.Text = "     Account";
             this.account.UseVisualStyleBackColor = false;
             this.account.Click += new System.EventHandler(this.account_Click);
             // 
@@ -207,21 +210,21 @@
             // 
             this.panel8.Controls.Add(this.pictureBox7);
             this.panel8.Controls.Add(this.button1);
-            this.panel8.Location = new System.Drawing.Point(0, 50);
+            this.panel8.Location = new System.Drawing.Point(0, 77);
             this.panel8.Margin = new System.Windows.Forms.Padding(0);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(175, 50);
+            this.panel8.Size = new System.Drawing.Size(262, 77);
             this.panel8.TabIndex = 2;
             // 
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(10, 10);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(10);
+            this.pictureBox7.Location = new System.Drawing.Point(15, 15);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Padding = new System.Windows.Forms.Padding(10);
-            this.pictureBox7.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox7.Padding = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.pictureBox7.Size = new System.Drawing.Size(45, 46);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 1;
             this.pictureBox7.TabStop = false;
@@ -240,10 +243,11 @@
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            this.button1.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button1.Size = new System.Drawing.Size(175, 50);
+            this.button1.Size = new System.Drawing.Size(262, 77);
             this.button1.TabIndex = 0;
             this.button1.Text = "        About account";
             this.button1.UseVisualStyleBackColor = false;
@@ -258,10 +262,10 @@
             this.Logout_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Logout_btn.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Logout_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
-            this.Logout_btn.Location = new System.Drawing.Point(50, 110);
-            this.Logout_btn.Margin = new System.Windows.Forms.Padding(50, 10, 50, 3);
+            this.Logout_btn.Location = new System.Drawing.Point(75, 169);
+            this.Logout_btn.Margin = new System.Windows.Forms.Padding(75, 15, 75, 5);
             this.Logout_btn.Name = "Logout_btn";
-            this.Logout_btn.Size = new System.Drawing.Size(75, 30);
+            this.Logout_btn.Size = new System.Drawing.Size(112, 46);
             this.Logout_btn.TabIndex = 3;
             this.Logout_btn.Text = "Log out";
             this.Logout_btn.UseVisualStyleBackColor = false;
@@ -271,10 +275,10 @@
             // 
             this.panel6.Controls.Add(this.pictureBox5);
             this.panel6.Controls.Add(this.Notification_btn);
-            this.panel6.Location = new System.Drawing.Point(0, 100);
+            this.panel6.Location = new System.Drawing.Point(0, 154);
             this.panel6.Margin = new System.Windows.Forms.Padding(0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(175, 50);
+            this.panel6.Size = new System.Drawing.Size(262, 77);
             this.panel6.TabIndex = 5;
             // 
             // pictureBox5
@@ -282,11 +286,11 @@
             this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(10, 10);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(10);
+            this.pictureBox5.Location = new System.Drawing.Point(15, 15);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Padding = new System.Windows.Forms.Padding(10);
-            this.pictureBox5.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox5.Padding = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.pictureBox5.Size = new System.Drawing.Size(45, 46);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 1;
             this.pictureBox5.TabStop = false;
@@ -304,10 +308,11 @@
             this.Notification_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
             this.Notification_btn.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.Notification_btn.Location = new System.Drawing.Point(0, 0);
+            this.Notification_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Notification_btn.Name = "Notification_btn";
-            this.Notification_btn.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            this.Notification_btn.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.Notification_btn.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Notification_btn.Size = new System.Drawing.Size(175, 50);
+            this.Notification_btn.Size = new System.Drawing.Size(262, 77);
             this.Notification_btn.TabIndex = 0;
             this.Notification_btn.Text = "        Notification";
             this.Notification_btn.UseVisualStyleBackColor = false;
@@ -317,10 +322,10 @@
             // 
             this.panel4.Controls.Add(this.pictureBox3);
             this.panel4.Controls.Add(this.req_doc_btn);
-            this.panel4.Location = new System.Drawing.Point(0, 150);
+            this.panel4.Location = new System.Drawing.Point(0, 231);
             this.panel4.Margin = new System.Windows.Forms.Padding(0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(175, 50);
+            this.panel4.Size = new System.Drawing.Size(262, 77);
             this.panel4.TabIndex = 3;
             // 
             // pictureBox3
@@ -328,11 +333,11 @@
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(10, 10);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(10);
+            this.pictureBox3.Location = new System.Drawing.Point(15, 15);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Padding = new System.Windows.Forms.Padding(10);
-            this.pictureBox3.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox3.Padding = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.pictureBox3.Size = new System.Drawing.Size(45, 46);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
@@ -350,10 +355,11 @@
             this.req_doc_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
             this.req_doc_btn.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.req_doc_btn.Location = new System.Drawing.Point(0, 0);
+            this.req_doc_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.req_doc_btn.Name = "req_doc_btn";
-            this.req_doc_btn.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            this.req_doc_btn.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.req_doc_btn.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.req_doc_btn.Size = new System.Drawing.Size(175, 50);
+            this.req_doc_btn.Size = new System.Drawing.Size(262, 77);
             this.req_doc_btn.TabIndex = 0;
             this.req_doc_btn.Text = "        Request document";
             this.req_doc_btn.UseVisualStyleBackColor = false;
@@ -363,10 +369,10 @@
             // 
             this.panel5.Controls.Add(this.pictureBox4);
             this.panel5.Controls.Add(this.Blotter_btn);
-            this.panel5.Location = new System.Drawing.Point(0, 200);
+            this.panel5.Location = new System.Drawing.Point(0, 308);
             this.panel5.Margin = new System.Windows.Forms.Padding(0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(175, 50);
+            this.panel5.Size = new System.Drawing.Size(262, 77);
             this.panel5.TabIndex = 4;
             // 
             // pictureBox4
@@ -374,11 +380,11 @@
             this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(10, 10);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(10);
+            this.pictureBox4.Location = new System.Drawing.Point(15, 15);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Padding = new System.Windows.Forms.Padding(10);
-            this.pictureBox4.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox4.Padding = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.pictureBox4.Size = new System.Drawing.Size(45, 46);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 1;
             this.pictureBox4.TabStop = false;
@@ -396,10 +402,11 @@
             this.Blotter_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
             this.Blotter_btn.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.Blotter_btn.Location = new System.Drawing.Point(0, 0);
+            this.Blotter_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Blotter_btn.Name = "Blotter_btn";
-            this.Blotter_btn.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            this.Blotter_btn.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.Blotter_btn.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Blotter_btn.Size = new System.Drawing.Size(175, 50);
+            this.Blotter_btn.Size = new System.Drawing.Size(262, 77);
             this.Blotter_btn.TabIndex = 0;
             this.Blotter_btn.Text = "       Blotter";
             this.Blotter_btn.UseVisualStyleBackColor = false;
@@ -409,10 +416,10 @@
             // 
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Controls.Add(this.concern_btn);
-            this.panel3.Location = new System.Drawing.Point(0, 250);
+            this.panel3.Location = new System.Drawing.Point(0, 385);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(175, 50);
+            this.panel3.Size = new System.Drawing.Size(262, 77);
             this.panel3.TabIndex = 2;
             // 
             // pictureBox2
@@ -420,11 +427,11 @@
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(10, 10);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(10);
+            this.pictureBox2.Location = new System.Drawing.Point(15, 15);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Padding = new System.Windows.Forms.Padding(10);
-            this.pictureBox2.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox2.Padding = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.pictureBox2.Size = new System.Drawing.Size(45, 46);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -442,10 +449,11 @@
             this.concern_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
             this.concern_btn.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.concern_btn.Location = new System.Drawing.Point(0, 0);
+            this.concern_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.concern_btn.Name = "concern_btn";
-            this.concern_btn.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            this.concern_btn.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.concern_btn.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.concern_btn.Size = new System.Drawing.Size(175, 50);
+            this.concern_btn.Size = new System.Drawing.Size(262, 77);
             this.concern_btn.TabIndex = 0;
             this.concern_btn.Text = "         Concerns";
             this.concern_btn.UseVisualStyleBackColor = false;
@@ -468,21 +476,23 @@
             // 
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(175, 32);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(262, 49);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(703, 443);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1055, 682);
             this.flowLayoutPanel1.TabIndex = 4;
             // 
             // residentDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(878, 475);
+            this.ClientSize = new System.Drawing.Size(1317, 731);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "residentDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Barangay Jurisdiction Management System";
