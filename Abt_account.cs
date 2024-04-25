@@ -1,4 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
+using Mysqlx.Crud;
+using Org.BouncyCastle.Utilities.Encoders;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,11 +11,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Xml.Linq;
 
 namespace WindowsFormsApp1
 {
     public partial class Abt_account : UserControl
     {
+        string database = "server = localhost; user = root; database = resident_database; sslMode = none;";
+        bool monthlyincome;
         public Abt_account()
         {
             InitializeComponent();
@@ -23,6 +29,66 @@ namespace WindowsFormsApp1
         {
             try
             {
+                if (user._acc_name != null)
+                {
+                    acc_name_tbx.Enabled = false;
+                }
+                if (user._acc_pass != null)
+                {
+                    pass_tbx.Enabled = false;
+                }
+                if (user._phone_no != 0)
+                {
+                    phone_num_tbx.Enabled = false;
+                }
+                if (user._fname != null)
+                {
+                    fname_tbx.Enabled = false;
+                }
+                if (user._Lname != null)
+                {
+                    Lname_tbx.Enabled = false;
+                }
+                if (user._age != 0)
+                {
+                    age_cmbx.Enabled = false;
+                }
+                if (user._birthdate.ToString() != null)
+                {
+                    birthdate_dtp.Enabled = false;
+                }
+                if (user._sex != null)
+                {
+                    acc_sex.Enabled = false;
+                }
+                if (user._voter_status != null)
+                {
+                    voter_status.Enabled = false;
+                }
+                if (user._vacc_status != null)
+                {
+                    vacc_status.Enabled = false;
+                }
+                if (user._address != null)
+                {
+                    Address_tbx.Enabled = false;
+                }
+                if (user._marital_status != null)
+                {
+                    Marital_status.Enabled = false;
+                }
+                if (user._no_of_fam != 0)
+                {
+                    num_fam.Enabled = false;
+                }
+                if (user._educ_attain != null)
+                {
+                    educ_attain.Enabled = false;
+                }
+                if (user._occupation != null)
+                {
+                    occupation_tbx.Enabled = false;
+                }
                 if (user._profile_pic != null && user._profile_pic.Length > 0)
                 {
                     using (MemoryStream ms = new MemoryStream(user._profile_pic))
@@ -30,6 +96,7 @@ namespace WindowsFormsApp1
                         ms.Seek(0, SeekOrigin.Begin);
                         profile_pic_pbx.Image = Image.FromStream(ms);
                     }
+                    profile_upload_btn.Enabled = false;
                 }
                 acc_name_tbx.Text = user._acc_name;
                 pass_tbx.Text = user._acc_pass;
@@ -61,6 +128,31 @@ namespace WindowsFormsApp1
         private void Abt_account_Load(object sender, EventArgs e)
         {
 
+        }
+
+        // button for uploading picture to the database. 
+        private void button2_Click(object sender, EventArgs e)
+        {
+        }
+
+        // button for selecting image tto be uploaded to the picturebox.
+        private void profile_upload_btn_Click(object sender, EventArgs e)
+        {
+            string imageLocation = "";
+            try
+            {
+                OpenFileDialog dialog = new OpenFileDialog();
+                dialog.Filter = "jpg files(*.jpg)|*.jpg| PNG files (*.png)|*.png| All Files(*.*)|*.*";
+                if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    imageLocation = dialog.FileName;
+                    profile_pic_pbx.ImageLocation = imageLocation;
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("An Error Occured", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

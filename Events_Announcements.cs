@@ -186,6 +186,8 @@ namespace WindowsFormsApp1
             if(Account_drpdown_pnl.Height == 150)
             {
                 account_btn_drpdwn_animation.Start();
+
+
             }
         }
 
