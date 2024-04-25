@@ -1,4 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
+using Mysqlx.Crud;
+using Org.BouncyCastle.Utilities.Encoders;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,6 +11,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Xml.Linq;
 
 namespace WindowsFormsApp1
 {
@@ -129,7 +133,6 @@ namespace WindowsFormsApp1
         // button for uploading picture to the database. 
         private void button2_Click(object sender, EventArgs e)
         {
-
         }
 
         // button for selecting image tto be uploaded to the picturebox.
