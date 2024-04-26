@@ -176,6 +176,12 @@ namespace WindowsFormsApp1
         {
             PopulateCustomListWithResidents();
         }
+
+        private void Summaries_Click(object sender, EventArgs e)
+        {
+            summaries_uc open = new summaries_uc();
+            addUserControl(open);
+        }
     }
     public class ResidentData
     {

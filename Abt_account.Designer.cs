@@ -80,7 +80,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(162)))), ((int)(((byte)(216)))));
             this.panel1.Location = new System.Drawing.Point(10, 266);
-            this.panel1.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.panel1.Margin = new System.Windows.Forms.Padding(10);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(580, 3);
             this.panel1.TabIndex = 0;
@@ -89,7 +89,7 @@
             // 
             this.profile_pic_pbx.Image = ((System.Drawing.Image)(resources.GetObject("profile_pic_pbx.Image")));
             this.profile_pic_pbx.Location = new System.Drawing.Point(40, 61);
-            this.profile_pic_pbx.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.profile_pic_pbx.Margin = new System.Windows.Forms.Padding(10);
             this.profile_pic_pbx.Name = "profile_pic_pbx";
             this.profile_pic_pbx.Size = new System.Drawing.Size(150, 150);
             this.profile_pic_pbx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -117,7 +117,7 @@
             this.profile_upload_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.profile_upload_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
             this.profile_upload_btn.Location = new System.Drawing.Point(61, 220);
-            this.profile_upload_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.profile_upload_btn.Margin = new System.Windows.Forms.Padding(2);
             this.profile_upload_btn.Name = "profile_upload_btn";
             this.profile_upload_btn.Size = new System.Drawing.Size(110, 31);
             this.profile_upload_btn.TabIndex = 3;
@@ -134,7 +134,7 @@
             this.acc_name_tbx.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.acc_name_tbx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
             this.acc_name_tbx.Location = new System.Drawing.Point(217, 84);
-            this.acc_name_tbx.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.acc_name_tbx.Margin = new System.Windows.Forms.Padding(2);
             this.acc_name_tbx.Name = "acc_name_tbx";
             this.acc_name_tbx.Size = new System.Drawing.Size(345, 22);
             this.acc_name_tbx.TabIndex = 1;
@@ -161,7 +161,7 @@
             this.pass_tbx.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pass_tbx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
             this.pass_tbx.Location = new System.Drawing.Point(217, 134);
-            this.pass_tbx.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pass_tbx.Margin = new System.Windows.Forms.Padding(2);
             this.pass_tbx.Name = "pass_tbx";
             this.pass_tbx.PasswordChar = '*';
             this.pass_tbx.Size = new System.Drawing.Size(345, 22);
@@ -189,7 +189,7 @@
             this.phone_num_tbx.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.phone_num_tbx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
             this.phone_num_tbx.Location = new System.Drawing.Point(217, 185);
-            this.phone_num_tbx.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.phone_num_tbx.Margin = new System.Windows.Forms.Padding(2);
             this.phone_num_tbx.Name = "phone_num_tbx";
             this.phone_num_tbx.Size = new System.Drawing.Size(189, 22);
             this.phone_num_tbx.TabIndex = 3;
@@ -217,7 +217,6 @@
             this.label5.Size = new System.Drawing.Size(132, 25);
             this.label5.TabIndex = 10;
             this.label5.Text = "Personal info";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // fname_tbx
             // 
@@ -228,7 +227,7 @@
             this.fname_tbx.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fname_tbx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
             this.fname_tbx.Location = new System.Drawing.Point(28, 335);
-            this.fname_tbx.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.fname_tbx.Margin = new System.Windows.Forms.Padding(2);
             this.fname_tbx.Name = "fname_tbx";
             this.fname_tbx.Size = new System.Drawing.Size(266, 22);
             this.fname_tbx.TabIndex = 4;
@@ -255,7 +254,7 @@
             this.Lname_tbx.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lname_tbx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
             this.Lname_tbx.Location = new System.Drawing.Point(310, 335);
-            this.Lname_tbx.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Lname_tbx.Margin = new System.Windows.Forms.Padding(2);
             this.Lname_tbx.Name = "Lname_tbx";
             this.Lname_tbx.Size = new System.Drawing.Size(266, 22);
             this.Lname_tbx.TabIndex = 5;
@@ -349,7 +348,7 @@
             "Male ",
             "Female"});
             this.acc_sex.Location = new System.Drawing.Point(199, 385);
-            this.acc_sex.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.acc_sex.Margin = new System.Windows.Forms.Padding(2);
             this.acc_sex.Name = "acc_sex";
             this.acc_sex.Size = new System.Drawing.Size(64, 23);
             this.acc_sex.TabIndex = 8;
@@ -363,7 +362,7 @@
             this.Address_tbx.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Address_tbx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
             this.Address_tbx.Location = new System.Drawing.Point(28, 436);
-            this.Address_tbx.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Address_tbx.Margin = new System.Windows.Forms.Padding(2);
             this.Address_tbx.Multiline = true;
             this.Address_tbx.Name = "Address_tbx";
             this.Address_tbx.Size = new System.Drawing.Size(548, 55);
@@ -394,7 +393,7 @@
             "Registered",
             "Unregistered"});
             this.voter_status.Location = new System.Drawing.Point(278, 385);
-            this.voter_status.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.voter_status.Margin = new System.Windows.Forms.Padding(2);
             this.voter_status.Name = "voter_status";
             this.voter_status.Size = new System.Drawing.Size(110, 23);
             this.voter_status.TabIndex = 9;
@@ -422,13 +421,13 @@
             this.update_info_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.update_info_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
             this.update_info_btn.Location = new System.Drawing.Point(217, 732);
-            this.update_info_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.update_info_btn.Margin = new System.Windows.Forms.Padding(2);
             this.update_info_btn.Name = "update_info_btn";
             this.update_info_btn.Size = new System.Drawing.Size(110, 31);
             this.update_info_btn.TabIndex = 49;
             this.update_info_btn.Text = "Update info";
             this.update_info_btn.UseVisualStyleBackColor = false;
-            this.update_info_btn.Click += new System.EventHandler(this.button2_Click);
+            this.update_info_btn.Click += new System.EventHandler(this.update_Click);
             // 
             // Marital_status
             // 
@@ -442,7 +441,7 @@
             "Married",
             "Singel"});
             this.Marital_status.Location = new System.Drawing.Point(127, 565);
-            this.Marital_status.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Marital_status.Margin = new System.Windows.Forms.Padding(2);
             this.Marital_status.Name = "Marital_status";
             this.Marital_status.Size = new System.Drawing.Size(110, 23);
             this.Marital_status.TabIndex = 12;
@@ -475,7 +474,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(162)))), ((int)(((byte)(216)))));
             this.panel2.Location = new System.Drawing.Point(10, 514);
-            this.panel2.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.panel2.Margin = new System.Windows.Forms.Padding(10);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(580, 3);
             this.panel2.TabIndex = 53;
@@ -518,7 +517,7 @@
             this.monthly_income.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.monthly_income.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
             this.monthly_income.Location = new System.Drawing.Point(29, 657);
-            this.monthly_income.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.monthly_income.Margin = new System.Windows.Forms.Padding(2);
             this.monthly_income.Name = "monthly_income";
             this.monthly_income.Size = new System.Drawing.Size(207, 22);
             this.monthly_income.TabIndex = 14;
@@ -563,7 +562,7 @@
             "Udergraduate",
             "College Graduate"});
             this.educ_attain.Location = new System.Drawing.Point(310, 597);
-            this.educ_attain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.educ_attain.Margin = new System.Windows.Forms.Padding(2);
             this.educ_attain.Name = "educ_attain";
             this.educ_attain.Size = new System.Drawing.Size(252, 23);
             this.educ_attain.TabIndex = 15;
@@ -585,7 +584,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(162)))), ((int)(((byte)(216)))));
             this.panel3.Location = new System.Drawing.Point(271, 529);
-            this.panel3.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.panel3.Margin = new System.Windows.Forms.Padding(10);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(3, 168);
             this.panel3.TabIndex = 53;
@@ -599,7 +598,7 @@
             this.occupation_tbx.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.occupation_tbx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
             this.occupation_tbx.Location = new System.Drawing.Point(312, 654);
-            this.occupation_tbx.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.occupation_tbx.Margin = new System.Windows.Forms.Padding(2);
             this.occupation_tbx.Name = "occupation_tbx";
             this.occupation_tbx.Size = new System.Drawing.Size(250, 22);
             this.occupation_tbx.TabIndex = 20;
@@ -629,7 +628,7 @@
             "Vaccinated",
             "non-Vaccinated"});
             this.vacc_status.Location = new System.Drawing.Point(405, 385);
-            this.vacc_status.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.vacc_status.Margin = new System.Windows.Forms.Padding(2);
             this.vacc_status.Name = "vacc_status";
             this.vacc_status.Size = new System.Drawing.Size(126, 23);
             this.vacc_status.TabIndex = 10;

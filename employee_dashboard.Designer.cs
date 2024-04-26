@@ -282,6 +282,7 @@
             this.Summaries.TabIndex = 3;
             this.Summaries.Text = "Summaries";
             this.Summaries.UseVisualStyleBackColor = false;
+            this.Summaries.Click += new System.EventHandler(this.Summaries_Click);
             // 
             // panel3
             // 
