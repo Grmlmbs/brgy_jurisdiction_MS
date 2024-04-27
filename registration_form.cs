@@ -54,8 +54,8 @@ namespace WindowsFormsApp1
             MySqlConnection con = new MySqlConnection(database);
             try
             {
-                MySqlCommand cmd = new MySqlCommand("INSERT INTO `accounts`(`accID`, `Profile_pic`, `first_name`, `last_name`, `name`, `Birthdate`, `age`, `sex`, `password`, `Address`, `Telephone_no`, `Voter_status`, `Marital_status`, `No_of_fam_mem`, `Mon_income`, `educational_attainment`, `occupation`, `vaccination_status`) " +
-                "VALUES (NULL, @Profile_pic, @first_name, @last_name, @name, @Birthdate, @age, @sex, @password, @Address, @Telephone_no, @Voter_status, @Marital_status, @No_of_fam_mem, @Mon_income, @educational_attainment, @occupation, @vaccination_status)", con);
+                MySqlCommand cmd = new MySqlCommand("INSERT INTO `accounts`(`Profile_pic`, `first_name`, `last_name`, `name`, `Birthdate`, `age`, `sex`, `password`, `Address`, `Telephone_no`, `Voter_status`, `Marital_status`, `No_of_fam_mem`, `Mon_income`, `educational_attainment`, `occupation`, `vaccination_status`) " +
+                "VALUES (@Profile_pic, @first_name, @last_name, @name, @Birthdate, @age, @sex, @password, @Address, @Telephone_no, @Voter_status, @Marital_status, @No_of_fam_mem, @Mon_income, @educational_attainment, @occupation, @vaccination_status)", con);
 
 
                 MemoryStream ms = new MemoryStream();

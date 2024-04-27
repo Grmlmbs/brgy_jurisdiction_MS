@@ -157,7 +157,7 @@
             // 
             // con_show_btn
             // 
-            this.con_show_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(162)))), ((int)(((byte)(216)))));
+            this.con_show_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
             this.con_show_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("con_show_btn.BackgroundImage")));
             this.con_show_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.con_show_btn.FlatAppearance.BorderSize = 0;
@@ -172,7 +172,7 @@
             // 
             // con_hide_btn
             // 
-            this.con_hide_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(162)))), ((int)(((byte)(216)))));
+            this.con_hide_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
             this.con_hide_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("con_hide_btn.BackgroundImage")));
             this.con_hide_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.con_hide_btn.FlatAppearance.BorderSize = 0;
@@ -188,7 +188,7 @@
             // conp_tbx
             // 
             this.conp_tbx.AcceptsTab = true;
-            this.conp_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(162)))), ((int)(((byte)(216)))));
+            this.conp_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
             this.conp_tbx.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.conp_tbx.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.conp_tbx.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -215,7 +215,7 @@
             // 
             // show_btn2
             // 
-            this.show_btn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(162)))), ((int)(((byte)(216)))));
+            this.show_btn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
             this.show_btn2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("show_btn2.BackgroundImage")));
             this.show_btn2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.show_btn2.FlatAppearance.BorderSize = 0;
@@ -230,7 +230,7 @@
             // 
             // hide_btn2
             // 
-            this.hide_btn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(162)))), ((int)(((byte)(216)))));
+            this.hide_btn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
             this.hide_btn2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hide_btn2.BackgroundImage")));
             this.hide_btn2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.hide_btn2.FlatAppearance.BorderSize = 0;
@@ -245,7 +245,7 @@
             // 
             // occupation_cmbx
             // 
-            this.occupation_cmbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(162)))), ((int)(((byte)(216)))));
+            this.occupation_cmbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
             this.occupation_cmbx.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.occupation_cmbx.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.occupation_cmbx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
@@ -261,7 +261,7 @@
             // 
             // vacc_status
             // 
-            this.vacc_status.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(162)))), ((int)(((byte)(216)))));
+            this.vacc_status.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
             this.vacc_status.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.vacc_status.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.vacc_status.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -304,7 +304,7 @@
             // 
             // educ_attain
             // 
-            this.educ_attain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(162)))), ((int)(((byte)(216)))));
+            this.educ_attain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
             this.educ_attain.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.educ_attain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.educ_attain.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -350,7 +350,7 @@
             // monthly_income
             // 
             this.monthly_income.AcceptsTab = true;
-            this.monthly_income.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(162)))), ((int)(((byte)(216)))));
+            this.monthly_income.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
             this.monthly_income.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.monthly_income.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.monthly_income.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -389,7 +389,7 @@
             // 
             // num_fam
             // 
-            this.num_fam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(162)))), ((int)(((byte)(216)))));
+            this.num_fam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
             this.num_fam.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.num_fam.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.num_fam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
@@ -425,7 +425,7 @@
             // 
             // Marital_status
             // 
-            this.Marital_status.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(162)))), ((int)(((byte)(216)))));
+            this.Marital_status.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
             this.Marital_status.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Marital_status.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Marital_status.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -475,7 +475,7 @@
             // 
             // voter_status
             // 
-            this.voter_status.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(162)))), ((int)(((byte)(216)))));
+            this.voter_status.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
             this.voter_status.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.voter_status.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.voter_status.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -506,7 +506,7 @@
             // Address_tbx
             // 
             this.Address_tbx.AcceptsTab = true;
-            this.Address_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(162)))), ((int)(((byte)(216)))));
+            this.Address_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
             this.Address_tbx.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Address_tbx.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Address_tbx.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -520,7 +520,7 @@
             // 
             // acc_sex
             // 
-            this.acc_sex.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(162)))), ((int)(((byte)(216)))));
+            this.acc_sex.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
             this.acc_sex.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.acc_sex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.acc_sex.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -563,7 +563,7 @@
             // 
             // age_npicker
             // 
-            this.age_npicker.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(162)))), ((int)(((byte)(216)))));
+            this.age_npicker.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
             this.age_npicker.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.age_npicker.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.age_npicker.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
@@ -607,7 +607,7 @@
             // Lname_tbx
             // 
             this.Lname_tbx.AcceptsTab = true;
-            this.Lname_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(162)))), ((int)(((byte)(216)))));
+            this.Lname_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
             this.Lname_tbx.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Lname_tbx.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Lname_tbx.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -634,7 +634,7 @@
             // fname_tbx
             // 
             this.fname_tbx.AcceptsTab = true;
-            this.fname_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(162)))), ((int)(((byte)(216)))));
+            this.fname_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
             this.fname_tbx.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.fname_tbx.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.fname_tbx.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -672,7 +672,7 @@
             // phone_num_tbx
             // 
             this.phone_num_tbx.AcceptsTab = true;
-            this.phone_num_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(162)))), ((int)(((byte)(216)))));
+            this.phone_num_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
             this.phone_num_tbx.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.phone_num_tbx.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.phone_num_tbx.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -699,7 +699,7 @@
             // pass_tbx
             // 
             this.pass_tbx.AcceptsTab = true;
-            this.pass_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(162)))), ((int)(((byte)(216)))));
+            this.pass_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
             this.pass_tbx.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.pass_tbx.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.pass_tbx.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -727,7 +727,7 @@
             // acc_name_tbx
             // 
             this.acc_name_tbx.AcceptsTab = true;
-            this.acc_name_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(162)))), ((int)(((byte)(216)))));
+            this.acc_name_tbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
             this.acc_name_tbx.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.acc_name_tbx.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.acc_name_tbx.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -852,53 +852,53 @@
 
         private System.Windows.Forms.Panel reg_form_pnl;
         private System.Windows.Forms.Button Close_btn;
-        public System.Windows.Forms.ComboBox vacc_status;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
-        public System.Windows.Forms.ComboBox educ_attain;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
-        public System.Windows.Forms.TextBox monthly_income;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
-        public System.Windows.Forms.NumericUpDown num_fam;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label14;
-        public System.Windows.Forms.ComboBox Marital_status;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button update_info_btn;
-        public System.Windows.Forms.ComboBox voter_status;
         private System.Windows.Forms.Label label12;
-        public System.Windows.Forms.TextBox Address_tbx;
-        public System.Windows.Forms.ComboBox acc_sex;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        public System.Windows.Forms.NumericUpDown age_npicker;
         private System.Windows.Forms.Label label8;
-        public System.Windows.Forms.TextBox Lname_tbx;
         private System.Windows.Forms.Label label7;
-        public System.Windows.Forms.TextBox fname_tbx;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        public System.Windows.Forms.TextBox phone_num_tbx;
         private System.Windows.Forms.Label label4;
-        public System.Windows.Forms.TextBox pass_tbx;
         private System.Windows.Forms.Label label3;
-        public System.Windows.Forms.TextBox acc_name_tbx;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button profile_upload_btn;
         private System.Windows.Forms.Label label1;
-        public System.Windows.Forms.PictureBox profile_pic_pbx;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel2;
-        public System.Windows.Forms.ComboBox occupation_cmbx;
         private System.Windows.Forms.Button show_btn2;
         private System.Windows.Forms.Button hide_btn2;
         private System.Windows.Forms.Button con_show_btn;
         private System.Windows.Forms.Button con_hide_btn;
-        public System.Windows.Forms.TextBox conp_tbx;
         private System.Windows.Forms.Label con_pass_tbx;
         private System.Windows.Forms.DateTimePicker birthdate_dtp;
+        private System.Windows.Forms.ComboBox vacc_status;
+        private System.Windows.Forms.ComboBox educ_attain;
+        private System.Windows.Forms.TextBox monthly_income;
+        private System.Windows.Forms.NumericUpDown num_fam;
+        private System.Windows.Forms.ComboBox Marital_status;
+        private System.Windows.Forms.ComboBox voter_status;
+        private System.Windows.Forms.TextBox Address_tbx;
+        private System.Windows.Forms.ComboBox acc_sex;
+        private System.Windows.Forms.NumericUpDown age_npicker;
+        private System.Windows.Forms.TextBox Lname_tbx;
+        private System.Windows.Forms.TextBox fname_tbx;
+        private System.Windows.Forms.TextBox phone_num_tbx;
+        private System.Windows.Forms.TextBox pass_tbx;
+        private System.Windows.Forms.TextBox acc_name_tbx;
+        private System.Windows.Forms.PictureBox profile_pic_pbx;
+        private System.Windows.Forms.ComboBox occupation_cmbx;
+        private System.Windows.Forms.TextBox conp_tbx;
     }
 }

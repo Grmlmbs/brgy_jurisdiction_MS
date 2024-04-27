@@ -124,65 +124,63 @@ namespace WindowsFormsApp1
         // this is a code block for the update button.
         private void update_info_btn_Click(object sender, EventArgs e)
         {
-            MySqlConnection con = new MySqlConnection(database);
-            string query = "UPDATE `accounts` SET `first_name`= @first_name,`last_name`= @last_name,`name`= @name," +
-                "`Birthdate`= @birthdate,`age`= @age,`sex`= @sex,`password`= @password,`Address`= @address,`Telephone_no`= @Telephone_no,`Voter_status`= @Voter_status," +
-                "`Marital_status`= @Marital_status,`No_of_fam_mem`= @No_of_fam_mem,`Mon_income`= @mon_income,`educational_attainment`= @educ_attainment,`occupation`= @occupation," +
-                $"`vaccination_status`= @vacc_status WHERE `accID` = @Residnt_ID";
 
-            MySqlCommand com = new MySqlCommand(query, con);
+            MySqlConnection con = new MySqlConnection(database);
             try
             {
+                string query = "UPDATE `accounts` SET Profile_pic = @first_name = @first_name, last_name = @last_name, name = @name," +
+                    " Birthdate = @birthdate, age = @age, sex = @sex, password = @password, Address = @address, Telephone_no = @Telephone_no, Voter_status = @Voter_status," +
+                    " Marital_status = @Marital_status, No_of_fam_mem = @No_of_fam_mem, Mon_income = @mon_income, educational_attainment = @educ_attainment, occupation = @occupation," +
+                    " vaccination_status = @vacc_status WHERE accID = @Resident_ID";
+
+                MySqlCommand com = new MySqlCommand(query, con);
+
+                byte[] profilePictureBytes;
+                using (MemoryStream ms = new MemoryStream())
+                {
+                    profile_pic_pbx.Image.Save(ms, profile_pic_pbx.Image.RawFormat);
+                    profilePictureBytes = ms.ToArray();
+                }
                 int res_ID = Convert.ToInt32(SelectedRowData["Resident_ID"]);
-                //MemoryStream ms = new MemoryStream();
-                //profile_pic_pbx.Image.Save(ms, profile_pic_pbx.Image.RawFormat);
-                //byte[] pImg = ms.ToArray();
-                string name = fname_tbx.Text + " " + Lname_tbx.Text;
                 string pass = pass_tbx.Text;
-                string conpass = con_pass_tbx.Text;
-                string phone_num = phone_num_tbx.Text;
-                string fname = fname_tbx.Text;
-                string lname = Lname_tbx.Text;
-                string bdate = birthdate_dtp.Value.ToString("yyyy-MM-dd");
-                int age = (int)age_npicker.Value;
-                string sex = acc_sex.Text;
-                string Vstatus = voter_status.Text;
-                string vaccstatus = vacc_status.Text;
+                string conpass = conp_tbx.Text;
                 string address = Address_tbx.Text;
+                string phone_num = phone_num_tbx.Text;
+                string Vstatus = voter_status.Text;
                 string Mstatus = Marital_status.Text;
                 int nooffammem = (int)num_fam.Value;
                 string mon_income = monthly_income.Text;
                 string educ_attainment = educ_attain.Text;
                 string occupation = occupation_cmbx.Text;
+                string vaccstatus = vacc_status.Text;
 
                 string hashedpass = Hashhelper.Hashstring(pass);
 
                 con.Open();
-                int rowsAffected = com.ExecuteNonQuery();
 
+                com.Parameters.AddWithValue("@profile_pic", profilePictureBytes);
                 com.Parameters.AddWithValue("@Resident_ID", res_ID);
-                //com.Parameters.AddWithValue("@Profile_pic", pImg);
-                com.Parameters.AddWithValue("@first_name", fname);
-                com.Parameters.AddWithValue("@last_name", lname);
-                com.Parameters.AddWithValue("@name", name);
-                com.Parameters.AddWithValue("@birthdate", bdate);
-                com.Parameters.AddWithValue("@age", age);
-                com.Parameters.AddWithValue("@sex", sex);
+                com.Parameters.AddWithValue("@first_name", fname_tbx.Text);
+                com.Parameters.AddWithValue("@last_name", Lname_tbx.Text);
+                com.Parameters.AddWithValue("@name", acc_name_tbx.Text);
+                com.Parameters.AddWithValue("@birthdate", birthdate_dtp.Value.ToString("yyyy-MM-dd"));
+                com.Parameters.AddWithValue("@age", (int)age_npicker.Value);
+                com.Parameters.AddWithValue("@sex", acc_sex.Text);
+
 
                 string anotherquery = "SELECT `password` FROM `accounts` WHERE accID = @Resident_ID";
                 MySqlCommand retricommand = new MySqlCommand(anotherquery, con);
-                MySqlDataReader reader = retricommand.ExecuteReader();
-
                 retricommand.Parameters.AddWithValue("@Resident_ID", res_ID);
+                MySqlDataReader reader = retricommand.ExecuteReader();
                 if (reader.Read())
                 {
                     string passfromdatabase = reader.GetString("password");
-
                     if (passfromdatabase != pass)
                     {
                         if (pass != conpass)
                         {
-                            MessageBox.Show("password and confirmpassword doesn't match.");
+                            MessageBox.Show("Password and confirm password do not match.");
+                            return;
                         }
                         else
                         {
@@ -194,27 +192,35 @@ namespace WindowsFormsApp1
                         com.Parameters.AddWithValue("@password", pass);
                     }
                 }
+                reader.Close();
+
                 com.Parameters.AddWithValue("@address", address);
                 com.Parameters.AddWithValue("@Telephone_no", phone_num);
                 com.Parameters.AddWithValue("@Voter_status", Vstatus);
-                com.Parameters.AddWithValue("@Marital_statuc", Mstatus);
+                com.Parameters.AddWithValue("@Marital_status", Mstatus);
                 com.Parameters.AddWithValue("@No_of_fam_mem", nooffammem);
                 com.Parameters.AddWithValue("@mon_income", mon_income);
                 com.Parameters.AddWithValue("@educ_attainment", educ_attainment);
                 com.Parameters.AddWithValue("@occupation", occupation);
                 com.Parameters.AddWithValue("@vacc_status", vaccstatus);
-                
-                con.Close();
+
+                int rowsAffected = com.ExecuteNonQuery();
+
+                if (rowsAffected > 0)
+                {
+                    MessageBox.Show("Data successfully updated");
+                }
             }
-            catch(Exception er)
+            catch (Exception er)
             {
-                MessageBox.Show("Error:" + er);
+                MessageBox.Show("Error:" + er.Message);
             }
             finally
             {
                 con.Close();
             }
         }
+
         // close the form.
         private void Close_btn_Click(object sender, EventArgs e)
         {

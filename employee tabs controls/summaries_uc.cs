@@ -12,7 +12,12 @@ using System.Windows.Forms;
 using System.Collections;
 using System.Xml.Linq;
 using System.IO;
+using LiveCharts;
 using System.Windows.Documents;
+using static Org.BouncyCastle.Asn1.Cmp.Challenge;
+using LiveCharts.Definitions.Series;
+using LiveCharts.Wpf;
+using LiveCharts.Definitions.Charts;
 
 namespace WindowsFormsApp1.employee_tabs_controls
 {
@@ -29,7 +34,7 @@ namespace WindowsFormsApp1.employee_tabs_controls
             Residents.Rows.Clear();
         }
 
-        // method to populate the datagridview with the data from the database.
+        // method to populate the datagridview with the data from the database and show it to the graphs.
         private void datapopulator()
         {
             ClearDataGridView();
@@ -39,6 +44,15 @@ namespace WindowsFormsApp1.employee_tabs_controls
             MySqlCommand com = new MySqlCommand(query, con);
             try
             {
+                int population = 0;
+                int male = 0;
+                int female = 0;
+                int child = 0;
+                int adult = 0;
+                int senior = 0;
+                int married = 0;
+                int single = 0;
+
                 con.Open();
                 MySqlDataReader reader = com.ExecuteReader();
 
@@ -46,12 +60,11 @@ namespace WindowsFormsApp1.employee_tabs_controls
                 while (reader.Read())
                 {
                     Residents.Rows.Add();
-                    // Debug: Print out field names and data types
+
                     for (int i = 0; i < reader.FieldCount; i++)
                     {
                         Console.WriteLine($"Field: {reader.GetName(i)}, Type: {reader.GetFieldType(i)}");
                     }
-
                     Residents["Resident_ID", rowIndex].Value = reader.GetInt32("accID").ToString();
                     Residents["Profile_picture", rowIndex].Value = ConvertToImage((byte[])reader["Profile_pic"]);
                     Residents["First_name", rowIndex].Value = reader.GetString("first_name");
@@ -71,8 +84,64 @@ namespace WindowsFormsApp1.employee_tabs_controls
                     Residents["res_acc_occupation", rowIndex].Value = reader.GetString("occupation");
                     Residents["vacc_status", rowIndex].Value = reader.GetString("vaccination_status");
 
+                    population++;
+
+                    if (Convert.ToInt32(Residents["res_acc_age", rowIndex].Value) > 0 && Convert.ToInt32(Residents["res_acc_age", rowIndex].Value) <= 17)
+                    {
+                        child++;
+                    }
+                    else if(Convert.ToInt32(Residents["res_acc_age", rowIndex].Value) > 18 && Convert.ToInt32(Residents["res_acc_age", rowIndex].Value) <= 59)
+                    {
+                        adult++;
+                    }
+                    else
+                    {
+                        senior++;
+                    }
+
+                    if (Residents["res_acc_sex", rowIndex].Value.ToString() == "Female")
+                    {
+                        female++;
+                    }
+                    else
+                    {
+                        male++;
+                    }
+
+                    if (Residents["marital_status", rowIndex].Value.ToString() == "Married")
+                    {
+                        married++;
+                    }
+                    else
+                    {
+                        single++;
+                    }
                     rowIndex++;
+
                 }
+                Tpopulation_lbl.Text = Convert.ToString(population);
+                male_count_lbl.Text = Convert.ToString(male);
+                female_count_lbl.Text = Convert.ToString(female);
+
+                sex_pchart.Titles.Add("Gender distribution");
+                sex_pchart.Series["Gender"].Points.AddXY("Male", male);
+                sex_pchart.Series["Gender"].Points.AddXY("Female", female);
+                
+                child_lbl.Text = Convert.ToString(child);
+                adult_lbl.Text = Convert.ToString(adult);
+                senior_lbl.Text = Convert.ToString(senior);
+
+                age_chart.Titles.Add("Age distribution");
+                age_chart.Series["age"].Points.AddXY("Child", child);
+                age_chart.Series["age"].Points.AddXY("Adult", adult);
+                age_chart.Series["age"].Points.AddXY("Senior", senior);
+
+                married_lbl.Text = Convert.ToString(married);
+                single_lbl.Text = Convert.ToString(single);
+
+                m_status_chart.Titles.Add("Marital status distribution");
+                m_status_chart.Series["Marital status"].Points.AddXY("Married", married);
+                m_status_chart.Series["Marital status"].Points.AddXY("Single", single);
             }
             catch (Exception ex)
             {
@@ -88,18 +157,22 @@ namespace WindowsFormsApp1.employee_tabs_controls
         {
             if (byteArray == null || byteArray.Length == 0)
             {
-                return null;
+                return Properties.Resources.profile_dflt2;
             }
 
-            using (MemoryStream ms = new MemoryStream(byteArray))
+            try
             {
-                return Image.FromStream(ms);
+                using (MemoryStream ms = new MemoryStream(byteArray))
+                {
+                    return Image.FromStream(ms);
+                }
             }
-        }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error loading image: " + ex.Message);
 
-        private void Residents_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
+                return Properties.Resources.profile_dflt2;
+            }
         }
 
         // the user control.
@@ -137,14 +210,6 @@ namespace WindowsFormsApp1.employee_tabs_controls
                 MessageBox.Show(er + "Error");
             }
         }
-        /*        
-        Birthdate, Age, Sex: Suitable for demographic charts like bar charts or pie charts.
-        Voter Status: Suitable for a pie chart.
-        Marital Status: Suitable for a pie chart or bar chart.
-        Educational Attainment: Suitable for a bar chart or pie chart.
-        Occupation: Suitable for a bar chart or pie chart.
-        Vaccination Status: Suitable for a pie chart.
-        */
         private void searchbox_tbx_Click(object sender, EventArgs e)
         {
             TextBox textbox = (TextBox)sender;
