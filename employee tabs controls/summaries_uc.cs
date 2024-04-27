@@ -52,6 +52,19 @@ namespace WindowsFormsApp1.employee_tabs_controls
                 int senior = 0;
                 int married = 0;
                 int single = 0;
+                int reg = 0;
+                int unreg = 0;
+                int no_formal = 0;
+                int primary = 0;
+                int secondary = 0;
+                int high_school = 0;
+                int undergrad = 0;
+                int collegegrad = 0;
+                int employed = 0;
+                int selfemp = 0;
+                int unemp = 0;
+                int vacc = 0;
+                int unvacc = 0;
 
                 con.Open();
                 MySqlDataReader reader = com.ExecuteReader();
@@ -85,6 +98,61 @@ namespace WindowsFormsApp1.employee_tabs_controls
                     Residents["vacc_status", rowIndex].Value = reader.GetString("vaccination_status");
 
                     population++;
+                    if (Residents["res_acc_occupation", rowIndex].Value.ToString() == "Unemployed")
+                    {
+                        unemp++;
+                    }
+                    else if (Residents["res_acc_occupation", rowIndex].Value.ToString() == "Self-employed")
+                    {
+                        selfemp++;
+                    }
+                    else
+                    {
+                        unemp++;
+                    }
+
+                    if(Residents["vacc_status", rowIndex].Value.ToString() == "Vaccinated")
+                    {
+                        vacc++;
+                    }
+                    else
+                    {
+                        unvacc++;
+                    }
+
+                    if(Residents["educ_attainment", rowIndex].Value.ToString() == "No Formal Education")
+                    {
+                        no_formal++;
+                    }
+                    else if(Residents["educ_attainment", rowIndex].Value.ToString() == "Primary Education")
+                    {
+                        primary++;
+                    }
+                    else if(Residents["educ_attainment", rowIndex].Value.ToString() == "Secondary Education")
+                    {
+                        secondary++;
+                    }
+                    else if(Residents["educ_attainment", rowIndex].Value.ToString() == "High School Diploma or Equivalent")
+                    {
+                        high_school++;
+                    }
+                    else if (Residents["educ_attainment", rowIndex].Value.ToString() == "Undergraduate")
+                    {
+                        undergrad++;
+                    }
+                    else
+                    {
+                        collegegrad++;
+                    }
+
+                    if (Residents["Voter_status", rowIndex].Value.ToString() == "Registered")
+                    {
+                        reg++;
+                    }
+                    else
+                    {
+                        unreg++;
+                    }
 
                     if (Convert.ToInt32(Residents["res_acc_age", rowIndex].Value) > 0 && Convert.ToInt32(Residents["res_acc_age", rowIndex].Value) <= 17)
                     {
@@ -119,11 +187,49 @@ namespace WindowsFormsApp1.employee_tabs_controls
                     rowIndex++;
 
                 }
+                vacc_lbl.Text = Convert.ToString(vacc);
+                unvacc_lbl.Text = Convert.ToString(unvacc);
+
+                vacc_chart.Titles.Add("Vaccination status");
+                vacc_chart.Series["Vaccination status"].Points.AddXY("Vaccinated", vacc);
+                vacc_chart.Series["Vaccination status"].Points.AddXY("Unvaccinated", unvacc);
+
+                employed_lbl.Text = Convert.ToString(employed);
+                unemployed_lbl.Text = Convert.ToString(unemp);
+                self_emp_lbl.Text = Convert.ToString(selfemp);
+
+                occu_chart .Titles.Add("Occupation");
+                occu_chart.Series["occupation"].Points.AddXY("Employed", employed);
+                occu_chart.Series["occupation"].Points.AddXY("Unemployed", unemp);
+                occu_chart.Series["occupation"].Points.AddXY("self_Employed", selfemp);
+
+                no_formal_ed_lbl.Text = Convert.ToString(no_formal);
+                primary_lbl.Text = Convert.ToString(primary);
+                secondary_lbl.Text = Convert.ToString(secondary);
+                high_school_lbl.Text = Convert.ToString(high_school);
+                undergrad_lbl.Text = Convert.ToString(undergrad);
+                college_grad_lbl.Text = Convert.ToString(collegegrad);
+
+                educational_attain_chart.Titles.Add("Educational Attainment");
+                educational_attain_chart.Series["educational attainment"].Points.AddXY("NFE", no_formal);
+                educational_attain_chart.Series["educational attainment"].Points.AddXY("PE", primary);
+                educational_attain_chart.Series["educational attainment"].Points.AddXY("SE", secondary);
+                educational_attain_chart.Series["educational attainment"].Points.AddXY("HS", high_school);
+                educational_attain_chart.Series["educational attainment"].Points.AddXY("UG", undergrad);
+                educational_attain_chart.Series["educational attainment"].Points.AddXY("CG", collegegrad);
+
+                reg_lbl.Text = Convert.ToString(reg);
+                unreg_lbl.Text = Convert.ToString(unreg);
+
+                v_status_chart.Titles.Add("Voter");
+                v_status_chart.Series["Voter status"].Points.AddXY("Registered", reg);
+                v_status_chart.Series["Voter status"].Points.AddXY("Unregistered", unreg);
+
                 Tpopulation_lbl.Text = Convert.ToString(population);
                 male_count_lbl.Text = Convert.ToString(male);
                 female_count_lbl.Text = Convert.ToString(female);
 
-                sex_pchart.Titles.Add("Gender distribution");
+                sex_pchart.Titles.Add("Gender");
                 sex_pchart.Series["Gender"].Points.AddXY("Male", male);
                 sex_pchart.Series["Gender"].Points.AddXY("Female", female);
                 
@@ -139,7 +245,7 @@ namespace WindowsFormsApp1.employee_tabs_controls
                 married_lbl.Text = Convert.ToString(married);
                 single_lbl.Text = Convert.ToString(single);
 
-                m_status_chart.Titles.Add("Marital status distribution");
+                m_status_chart.Titles.Add("Marital status");
                 m_status_chart.Series["Marital status"].Points.AddXY("Married", married);
                 m_status_chart.Series["Marital status"].Points.AddXY("Single", single);
             }
