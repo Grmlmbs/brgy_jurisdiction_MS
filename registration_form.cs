@@ -197,10 +197,5 @@ namespace WindowsFormsApp1
                 conp_tbx.PasswordChar = '*';
             }
         }
-
-        private void update_btn_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(registration_form));
             this.reg_form_pnl = new System.Windows.Forms.Panel();
-            this.update_btn = new System.Windows.Forms.Button();
             this.birthdate_dtp = new System.Windows.Forms.DateTimePicker();
             this.con_show_btn = new System.Windows.Forms.Button();
             this.con_hide_btn = new System.Windows.Forms.Button();
@@ -89,7 +88,6 @@
             // reg_form_pnl
             // 
             this.reg_form_pnl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
-            this.reg_form_pnl.Controls.Add(this.update_btn);
             this.reg_form_pnl.Controls.Add(this.birthdate_dtp);
             this.reg_form_pnl.Controls.Add(this.con_show_btn);
             this.reg_form_pnl.Controls.Add(this.con_hide_btn);
@@ -145,26 +143,6 @@
             this.reg_form_pnl.Name = "reg_form_pnl";
             this.reg_form_pnl.Size = new System.Drawing.Size(559, 726);
             this.reg_form_pnl.TabIndex = 0;
-            // 
-            // update_btn
-            // 
-            this.update_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
-            this.update_btn.FlatAppearance.BorderSize = 0;
-            this.update_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
-            this.update_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(162)))), ((int)(((byte)(216)))));
-            this.update_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.update_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.update_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
-            this.update_btn.Image = ((System.Drawing.Image)(resources.GetObject("update_btn.Image")));
-            this.update_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.update_btn.Location = new System.Drawing.Point(430, 667);
-            this.update_btn.Margin = new System.Windows.Forms.Padding(2);
-            this.update_btn.Name = "update_btn";
-            this.update_btn.Size = new System.Drawing.Size(86, 27);
-            this.update_btn.TabIndex = 113;
-            this.update_btn.Text = "    Update";
-            this.update_btn.UseVisualStyleBackColor = false;
-            this.update_btn.Click += new System.EventHandler(this.update_btn_Click);
             // 
             // birthdate_dtp
             // 
@@ -486,7 +464,7 @@
             this.update_info_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
             this.update_info_btn.Image = ((System.Drawing.Image)(resources.GetObject("update_info_btn.Image")));
             this.update_info_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.update_info_btn.Location = new System.Drawing.Point(324, 667);
+            this.update_info_btn.Location = new System.Drawing.Point(430, 668);
             this.update_info_btn.Margin = new System.Windows.Forms.Padding(2);
             this.update_info_btn.Name = "update_info_btn";
             this.update_info_btn.Size = new System.Drawing.Size(86, 27);
@@ -922,6 +900,5 @@
         public System.Windows.Forms.TextBox conp_tbx;
         private System.Windows.Forms.Label con_pass_tbx;
         private System.Windows.Forms.DateTimePicker birthdate_dtp;
-        private System.Windows.Forms.Button update_btn;
     }
 }

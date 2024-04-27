@@ -120,6 +120,12 @@
     <Compile Include="Abt_account.Designer.cs">
       <DependentUpon>Abt_account.cs</DependentUpon>
     </Compile>
+    <Compile Include="edit_profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit_profile.Designer.cs">
+      <DependentUpon>edit_profile.cs</DependentUpon>
+    </Compile>
     <Compile Include="employee tabs controls\Datapopulator.cs" />
     <Compile Include="employee tabs controls\posted_events.cs">
       <SubType>UserControl</SubType>
@@ -197,6 +203,7 @@
     <Compile Include="signupoptions.Designer.cs">
       <DependentUpon>signupoptions.cs</DependentUpon>
     </Compile>
+    <Compile Include="update_data_retriever.cs" />
     <Compile Include="userControlMkAn\composeAnnoucement.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -220,6 +227,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Abt_account.resx">
       <DependentUpon>Abt_account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit_profile.resx">
+      <DependentUpon>edit_profile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="employee tabs controls\posted_events.resx">
       <DependentUpon>posted_events.cs</DependentUpon>
@@ -296,6 +306,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\account %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account %282%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

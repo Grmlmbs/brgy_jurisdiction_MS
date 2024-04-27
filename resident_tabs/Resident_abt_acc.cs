@@ -18,6 +18,7 @@ namespace WindowsFormsApp1.resident_tabs
         {
             InitializeComponent();
         }
+
         // this will populate the user control for the about accound with the necessary info depending on the account.
         public void enteruserdetails(Accountdetails user)
         {

@@ -141,8 +141,6 @@ namespace WindowsFormsApp1.employee_tabs_controls
         Birthdate, Age, Sex: Suitable for demographic charts like bar charts or pie charts.
         Voter Status: Suitable for a pie chart.
         Marital Status: Suitable for a pie chart or bar chart.
-        Number of Family Members: Suitable for a bar chart or histogram.
-        Monthly Income: Suitable for a histogram or box plot.
         Educational Attainment: Suitable for a bar chart or pie chart.
         Occupation: Suitable for a bar chart or pie chart.
         Vaccination Status: Suitable for a pie chart.
@@ -155,15 +153,23 @@ namespace WindowsFormsApp1.employee_tabs_controls
             textbox.Font= new Font(searchbox_tbx.Font, FontStyle.Regular);
         }
 
+        // this will retrieve the resident ID to be used later in the query to populate the registration form for the necessary data
         private void Residents_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            try
             {
-                DataGridViewRow selected = Residents.Rows[e.RowIndex];
+                if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+                {
+                    DataGridViewRow selected = Residents.Rows[e.RowIndex];
 
-                string cell_in_resident_ID = selected.Cells["Resident_ID"].Value.ToString();
+                    string cell_in_resident_ID = selected.Cells["Resident_ID"].Value.ToString();
 
-                Abt_account.enteruserdetails(cell_in_resident_ID);
+                    Abt_account.enteruserdetails(cell_in_resident_ID);
+                }
+            }
+            catch(Exception er)
+            {
+                MessageBox.Show(er.Message);
             }
         }
 
@@ -225,6 +231,41 @@ namespace WindowsFormsApp1.employee_tabs_controls
             else
             {
                 MessageBox.Show("Please select a row to delete.", "No Row Selected", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        // this button will be used to update the edited profile of the resident.
+        private void update_btn_Click(object sender, EventArgs e)
+        {
+
+            if (Residents.SelectedRows.Count > 0)
+            {
+                DataGridViewRow selectedrow = Residents.SelectedRows[0];
+
+                DataGridViewRow selectedRow = Residents.SelectedRows[0];
+
+                object res_ID_value = selectedRow.Cells["Resident_ID"].Value;
+                string res_ID_asString = Convert.ToString(res_ID_value);
+
+                if (String.IsNullOrEmpty(res_ID_asString))
+                {
+                    MessageBox.Show("This Row is empty: \nPlease select another row to edit.");
+                }  
+                else
+                {
+                    edit_profile updateForm = new edit_profile();
+
+                    updateForm.SelectedRowData = new Dictionary<string, object>();
+                    foreach (DataGridViewCell cell in selectedRow.Cells)
+                    {
+                        updateForm.SelectedRowData[cell.OwningColumn.Name] = cell.Value;
+                    }
+                    DialogResult result = updateForm.ShowDialog();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a row to update.", "No Row Selected", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }

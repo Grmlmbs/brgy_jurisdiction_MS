@@ -111,6 +111,7 @@ namespace WindowsFormsApp1
                 Opacity += .03;
             }
         }
+
         // this method will retrieve all the data connected to the "name" and "password" then set the values that is read to the classess that we made.
         private Accountdetails retrievedata(string name, string password)
         {
