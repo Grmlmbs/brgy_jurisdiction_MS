@@ -183,6 +183,12 @@ namespace WindowsFormsApp1
             summaries_uc open = new summaries_uc();
             addUserControl(open);
         }
+
+        private void Blotter_btn_Click(object sender, EventArgs e)
+        {
+            blotter_logs open = new blotter_logs();
+            addUserControl(open);
+        }
     }
     public class ResidentData
     {

@@ -46,6 +46,9 @@ namespace WindowsFormsApp1
                 if (rowsAffected > 0)
                 {
                     MessageBox.Show("Request successfully sent");
+                    req_name_tbx.Clear();
+                    req_doc_dpdn.Text = null;
+                    purpose_tbx.Clear();
                 }
                 else
                 {

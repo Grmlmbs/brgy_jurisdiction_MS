@@ -213,21 +213,44 @@ namespace WindowsFormsApp1
 
         private void Blotter_btn_Click(object sender, EventArgs e)
         {
-            if(Account_drpdown_pnl.Height == 150)
+            Form FormBackground = new Form();
+            try
             {
-                account_btn_drpdwn_animation.Start();
+                using (blotter_form open = new blotter_form())
+                {
+                    FormBackground.StartPosition = FormStartPosition.CenterScreen;
+                    FormBackground.FormBorderStyle = FormBorderStyle.None;
+                    FormBackground.Opacity = .70d;
+                    FormBackground.BackColor = Color.Black;
+                    FormBackground.TopMost = true;
+                    FormBackground.Width = 894;
+                    FormBackground.Height = 514;
+                    FormBackground.ShowInTaskbar = false;
+                    FormBackground.Owner = this;
+                    FormBackground.Show();
 
+                    open.Owner = FormBackground;
+                    open.ShowDialog();
 
+                    FormBackground.Dispose();
+                }
             }
-        }
-
-        private void concern_btn_Click(object sender, EventArgs e)
-        {
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                FormBackground.Dispose();
+            }
             if (Account_drpdown_pnl.Height == 150)
             {
                 account_btn_drpdwn_animation.Start();
+
+
             }
         }
+
         //log out button
         private void Logout_btn_Click(object sender, EventArgs e)
         {

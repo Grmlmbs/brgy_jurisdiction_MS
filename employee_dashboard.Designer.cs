@@ -30,12 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             this.logOut_btn = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.abt_account_btn = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.makeAnsmnt_btn = new System.Windows.Forms.Button();
             this.container = new System.Windows.Forms.FlowLayoutPanel();
             this.accPanel = new System.Windows.Forms.Panel();
+            this.accName_btn = new System.Windows.Forms.Button();
             this.accounttabexpand = new System.Windows.Forms.Timer(this.components);
             this.mySqlCommand1 = new MySql.Data.MySqlClient.MySqlCommand();
             this.docReq_btn = new System.Windows.Forms.Button();
@@ -49,9 +48,7 @@
             this.posted_eve_btn = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.gradientPanel1 = new WindowsFormsApp1.GradientPanel();
-            this.accName_btn = new System.Windows.Forms.Button();
-            this.panel6.SuspendLayout();
-            this.panel8.SuspendLayout();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.container.SuspendLayout();
             this.accPanel.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -59,6 +56,7 @@
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // logOut_btn
@@ -79,36 +77,8 @@
             this.logOut_btn.UseVisualStyleBackColor = false;
             this.logOut_btn.Click += new System.EventHandler(this.button6_Click);
             // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.abt_account_btn);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 50);
-            this.panel6.Margin = new System.Windows.Forms.Padding(0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(200, 50);
-            this.panel6.TabIndex = 3;
-            // 
-            // abt_account_btn
-            // 
-            this.abt_account_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
-            this.abt_account_btn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.abt_account_btn.FlatAppearance.BorderSize = 0;
-            this.abt_account_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
-            this.abt_account_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.abt_account_btn.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.abt_account_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
-            this.abt_account_btn.Location = new System.Drawing.Point(0, 0);
-            this.abt_account_btn.Margin = new System.Windows.Forms.Padding(0);
-            this.abt_account_btn.Name = "abt_account_btn";
-            this.abt_account_btn.Size = new System.Drawing.Size(200, 50);
-            this.abt_account_btn.TabIndex = 0;
-            this.abt_account_btn.Text = "About acount";
-            this.abt_account_btn.UseVisualStyleBackColor = false;
-            // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.makeAnsmnt_btn);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(0, 100);
             this.panel8.Margin = new System.Windows.Forms.Padding(0);
@@ -136,7 +106,6 @@
             // 
             // container
             // 
-            this.container.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.container.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
             this.container.Controls.Add(this.accPanel);
             this.container.Controls.Add(this.panel6);
@@ -157,6 +126,24 @@
             this.accPanel.Name = "accPanel";
             this.accPanel.Size = new System.Drawing.Size(200, 50);
             this.accPanel.TabIndex = 0;
+            // 
+            // accName_btn
+            // 
+            this.accName_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
+            this.accName_btn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.accName_btn.FlatAppearance.BorderSize = 0;
+            this.accName_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
+            this.accName_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.accName_btn.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accName_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
+            this.accName_btn.Location = new System.Drawing.Point(0, 0);
+            this.accName_btn.Margin = new System.Windows.Forms.Padding(0);
+            this.accName_btn.Name = "accName_btn";
+            this.accName_btn.Size = new System.Drawing.Size(200, 50);
+            this.accName_btn.TabIndex = 0;
+            this.accName_btn.Text = "Account options";
+            this.accName_btn.UseVisualStyleBackColor = false;
+            this.accName_btn.Click += new System.EventHandler(this.accName_btn_Click);
             // 
             // accounttabexpand
             // 
@@ -226,8 +213,9 @@
             this.Blotter_btn.Name = "Blotter_btn";
             this.Blotter_btn.Size = new System.Drawing.Size(170, 50);
             this.Blotter_btn.TabIndex = 3;
-            this.Blotter_btn.Text = "Blotters";
+            this.Blotter_btn.Text = "Blotters logs";
             this.Blotter_btn.UseVisualStyleBackColor = false;
+            this.Blotter_btn.Click += new System.EventHandler(this.Blotter_btn_Click);
             // 
             // panel1
             // 
@@ -313,22 +301,14 @@
             this.gradientPanel1.Size = new System.Drawing.Size(878, 26);
             this.gradientPanel1.TabIndex = 5;
             // 
-            // accName_btn
+            // panel6
             // 
-            this.accName_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
-            this.accName_btn.FlatAppearance.BorderSize = 0;
-            this.accName_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
-            this.accName_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.accName_btn.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accName_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
-            this.accName_btn.Location = new System.Drawing.Point(0, 0);
-            this.accName_btn.Margin = new System.Windows.Forms.Padding(0);
-            this.accName_btn.Name = "accName_btn";
-            this.accName_btn.Size = new System.Drawing.Size(200, 50);
-            this.accName_btn.TabIndex = 0;
-            this.accName_btn.Text = "Account Name";
-            this.accName_btn.UseVisualStyleBackColor = false;
-            this.accName_btn.Click += new System.EventHandler(this.accName_btn_Click);
+            this.panel6.Controls.Add(this.makeAnsmnt_btn);
+            this.panel6.Location = new System.Drawing.Point(0, 50);
+            this.panel6.Margin = new System.Windows.Forms.Padding(0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(200, 50);
+            this.panel6.TabIndex = 3;
             // 
             // empDashboard
             // 
@@ -346,8 +326,6 @@
             this.Text = "Employee\'s Dashboard";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Form3_Load);
-            this.panel6.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
             this.container.ResumeLayout(false);
             this.accPanel.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -355,16 +333,15 @@
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.Button logOut_btn;
-        private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Button makeAnsmnt_btn;
-        private System.Windows.Forms.Button abt_account_btn;
         private System.Windows.Forms.FlowLayoutPanel container;
         private System.Windows.Forms.Panel accPanel;
         private System.Windows.Forms.Timer accounttabexpand;
@@ -381,5 +358,6 @@
         private GradientPanel gradientPanel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button accName_btn;
+        private System.Windows.Forms.Panel panel6;
     }
 }

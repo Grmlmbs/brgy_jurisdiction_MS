@@ -36,16 +36,16 @@
             this.label3 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.events = new System.Windows.Forms.PictureBox();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.imglist_events = new System.Windows.Forms.ImageList(this.components);
             this.animation = new System.Windows.Forms.Timer(this.components);
+            this.events = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.events)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -135,17 +135,6 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Please select a log in option.";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(87, 29);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 116);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(162)))), ((int)(((byte)(216)))));
@@ -177,6 +166,25 @@
             this.label1.Text = "Welcome!";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // timer2
+            // 
+            this.timer2.Enabled = true;
+            this.timer2.Interval = 2000;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // imglist_events
+            // 
+            this.imglist_events.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imglist_events.ImageStream")));
+            this.imglist_events.TransparentColor = System.Drawing.Color.Transparent;
+            this.imglist_events.Images.SetKeyName(0, "images.jpg");
+            this.imglist_events.Images.SetKeyName(1, "360_F_313598699_jyO0OFvaccHWe9YsAY1s8Ycpf0qVPIVz.jpg");
+            // 
+            // animation
+            // 
+            this.animation.Enabled = true;
+            this.animation.Interval = 10;
+            this.animation.Tick += new System.EventHandler(this.animation_Tick);
+            // 
             // events
             // 
             this.events.Dock = System.Windows.Forms.DockStyle.Right;
@@ -188,27 +196,16 @@
             this.events.TabStop = false;
             this.events.Click += new System.EventHandler(this.events_Click);
             // 
-            // timer2
+            // pictureBox1
             // 
-            this.timer2.Enabled = true;
-            this.timer2.Interval = 2000;
-            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
-            // 
-            // imglist_events
-            // 
-            this.imglist_events.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imglist_events.ImageStream")));
-            this.imglist_events.TransparentColor = System.Drawing.Color.Transparent;
-            this.imglist_events.Images.SetKeyName(0, "d33ce0de-98be-4ebe-bf48-7f0d62cc0d82.jpg");
-            this.imglist_events.Images.SetKeyName(1, "a6f95129-15e7-4999-a5cc-54f5f2a1a8e8.jpg");
-            this.imglist_events.Images.SetKeyName(2, "Anticipation Flyer Design.jpg");
-            this.imglist_events.Images.SetKeyName(3, "Countdown Flyer design.jpg");
-            this.imglist_events.Images.SetKeyName(4, "4ce92df0-56a3-498f-bf9b-d084c3aa2be4.jpg");
-            // 
-            // animation
-            // 
-            this.animation.Enabled = true;
-            this.animation.Interval = 10;
-            this.animation.Tick += new System.EventHandler(this.animation_Tick);
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(87, 29);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 116);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
@@ -223,8 +220,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.events)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

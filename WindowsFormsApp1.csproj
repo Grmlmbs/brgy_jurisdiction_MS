@@ -120,11 +120,23 @@
     <Compile Include="Abt_account.Designer.cs">
       <DependentUpon>Abt_account.cs</DependentUpon>
     </Compile>
+    <Compile Include="blotter_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="blotter_form.Designer.cs">
+      <DependentUpon>blotter_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="edit_profile.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="edit_profile.Designer.cs">
       <DependentUpon>edit_profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee tabs controls\blotter_logs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="employee tabs controls\blotter_logs.Designer.cs">
+      <DependentUpon>blotter_logs.cs</DependentUpon>
     </Compile>
     <Compile Include="employee tabs controls\document_req_log.cs">
       <SubType>UserControl</SubType>
@@ -240,8 +252,14 @@
     <EmbeddedResource Include="Abt_account.resx">
       <DependentUpon>Abt_account.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="blotter_form.resx">
+      <DependentUpon>blotter_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="edit_profile.resx">
       <DependentUpon>edit_profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee tabs controls\blotter_logs.resx">
+      <DependentUpon>blotter_logs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="employee tabs controls\document_req_log.resx">
       <DependentUpon>document_req_log.cs</DependentUpon>
