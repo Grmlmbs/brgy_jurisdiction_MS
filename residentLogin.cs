@@ -121,11 +121,11 @@ namespace WindowsFormsApp1
                 MySqlConnection con = new MySqlConnection(database);
 
                 con.Open();
-                string query = "SELECT * FROM accounts WHERE name = @name AND password = @password";
+                string query = "SELECT * FROM accounts WHERE name = @name" /*AND password = @password*/;
                 MySqlCommand com = new MySqlCommand(query, con);
 
                 com.Parameters.AddWithValue("@name", name);
-                com.Parameters.AddWithValue("@password", password);
+                //com.Parameters.AddWithValue("@password", password);
                 MySqlDataReader reader = com.ExecuteReader();
 
                 if(reader.Read())

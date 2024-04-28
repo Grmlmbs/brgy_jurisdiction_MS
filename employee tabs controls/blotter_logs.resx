@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="blotter_ID.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="com_name.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -422,7 +425,7 @@
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAEOOSURBVHhe7d0L
+        vQAADr0BR/uQrQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAEOOSURBVHhe7d0L
         nCVXVe/xngxJeCTTVdWdRCZDMl1VMxMYCGh4XS9Xo4ISL0FQjtO1q2cIAUaB8LoiQbngCISXgAKiREAU
         uTcQAQOI4kUuj/AWuIJEwiNAILzygGRCAplMj3fvngVOqlc/pmfVObvq/L6fz//T8IFk7bP3qjp1zqnH
         BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -712,6 +715,17 @@
         Ni3qp4d9x/TM3DZu2wsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         wMTE/wefL/GdpHn/jAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="delete_btn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEKSURBVDhPhZFB
+        TgIxGIVHN3gJD6BrEhM5hAmEpZ7HeA49h0tXthBXDAsOQMsUWLmh/o958EOmv3zJS+a9/7VNO1WJGH9u
+        U/TjUyHj+DIp+A9ZlE/VBP/OcZnNyg9wUqvJV6uy30T/yGWKDGrR2an/aMZlSl583qzD9IHWJC1dP+d5
+        j1aROz7Jzr+0JuigS6vIAPfLtFVa+TnuyrepGaOHK4xplc4GLFo5rWIVrZxWsYpWTqtYRSunVQrFev+I
+        Ivk+/nd00KVVUnQjDIUrRh0wazdwI0bKNrp7DNfBPUvxmvERZE1wL+hsw/cd43Nk+CbatacUtUvBvbJe
+        Brs3YTKU8uEB90LWPbmq/gC5kZfF8Hg0xQAAAABJRU5ErkJggg==
 </value>
   </data>
 </root>

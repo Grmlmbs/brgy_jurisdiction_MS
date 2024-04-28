@@ -46,6 +46,7 @@ namespace WindowsFormsApp1.employee_tabs_controls
                     {
                         Console.WriteLine($"Field: {reader.GetName(i)}, Type: {reader.GetFieldType(i)}");
                     }
+                    blotters["blotter_ID", rowi].Value = reader.GetInt32("blotter_ID").ToString();
                     blotters["com_name", rowi].Value = reader.GetString("com_name");
                     blotters["def_name", rowi].Value = reader.GetString("def_name");
                     blotters["date_happ", rowi].Value = reader.GetDateTime("date_happened").ToString("yyyy-MM-dd");
@@ -118,6 +119,48 @@ namespace WindowsFormsApp1.employee_tabs_controls
                 defendant_name_lbl.Text = row.Cells["def_name"].Value.ToString();
                 date_happened_lbl.Text = row.Cells["date_happ"].Value.ToString();
                 narration_lbl.Text = row.Cells["narration"].Value.ToString();
+            }
+        }
+
+        private void delete_btn_Click(object sender, EventArgs e)
+        {
+            if (blotters.SelectedRows.Count > 0)
+            {
+                DataGridViewRow selectedRow = blotters.SelectedRows[0];
+
+                int blotID = Convert.ToInt32(selectedRow.Cells["blotter_ID"].Value);
+
+                string query = "DELETE FROM blotters_db WHERE blotter_ID = @blotter_ID";
+
+                using (MySqlConnection con = new MySqlConnection(database))
+                {
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, con))
+                    {
+
+                        cmd.Parameters.AddWithValue("@blotter_ID", blotID);
+
+                        try
+                        {
+                            con.Open();
+                            int rowsAffected = cmd.ExecuteNonQuery();
+
+                            if (rowsAffected > 0)
+                            {
+                                blotters.Rows.Remove(selectedRow);
+                                MessageBox.Show("Row deleted successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            }
+                            else
+                            {
+                                MessageBox.Show("No rows were affected.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("An error occurred while deleting the row: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
             }
         }
     }

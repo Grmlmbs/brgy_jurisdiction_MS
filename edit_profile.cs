@@ -128,19 +128,19 @@ namespace WindowsFormsApp1
             MySqlConnection con = new MySqlConnection(database);
             try
             {
-                string query = "UPDATE `accounts` SET Profile_pic = @first_name = @first_name, last_name = @last_name, name = @name," +
+                string query = "UPDATE `accounts` SET first_name = @first_name, last_name = @last_name, name = @name," +
                     " Birthdate = @birthdate, age = @age, sex = @sex, password = @password, Address = @address, Telephone_no = @Telephone_no, Voter_status = @Voter_status," +
                     " Marital_status = @Marital_status, No_of_fam_mem = @No_of_fam_mem, Mon_income = @mon_income, educational_attainment = @educ_attainment, occupation = @occupation," +
                     " vaccination_status = @vacc_status WHERE accID = @Resident_ID";
-
+                //Profile_pic = @profile_pic,
                 MySqlCommand com = new MySqlCommand(query, con);
 
-                byte[] profilePictureBytes;
-                using (MemoryStream ms = new MemoryStream())
-                {
-                    profile_pic_pbx.Image.Save(ms, profile_pic_pbx.Image.RawFormat);
-                    profilePictureBytes = ms.ToArray();
-                }
+                //byte[] profilePictureBytes;
+                //using (MemoryStream ms = new MemoryStream())
+                //{
+                //    profile_pic_pbx.Image.Save(ms, profile_pic_pbx.Image.RawFormat);
+                //    profilePictureBytes = ms.ToArray();
+                //}
                 int res_ID = Convert.ToInt32(SelectedRowData["Resident_ID"]);
                 string pass = pass_tbx.Text;
                 string conpass = conp_tbx.Text;
@@ -158,7 +158,7 @@ namespace WindowsFormsApp1
 
                 con.Open();
 
-                com.Parameters.AddWithValue("@profile_pic", profilePictureBytes);
+                //com.Parameters.AddWithValue("@profile_pic", profilePictureBytes);
                 com.Parameters.AddWithValue("@Resident_ID", res_ID);
                 com.Parameters.AddWithValue("@first_name", fname_tbx.Text);
                 com.Parameters.AddWithValue("@last_name", Lname_tbx.Text);

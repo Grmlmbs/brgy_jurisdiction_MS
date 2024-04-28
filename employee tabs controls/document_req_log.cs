@@ -26,7 +26,7 @@ namespace WindowsFormsApp1.employee_tabs_controls
 
         private void ClearDataGridView()
         {
-            blotters.Rows.Clear();
+            docu_req.Rows.Clear();
         }
 
         // method to populate the datagridview with the data from the database and show it to the graphs.
@@ -45,16 +45,17 @@ namespace WindowsFormsApp1.employee_tabs_controls
                 int rowi = 0;
                 while (reader.Read())
                 {
-                    blotters.Rows.Add();
+                    docu_req.Rows.Add();
 
                     for (int i = 0; i < reader.FieldCount; i++)
                     {
                         Console.WriteLine($"Field: {reader.GetName(i)}, Type: {reader.GetFieldType(i)}");
                     }
-                    blotters["full_name", rowi].Value = reader.GetString("Name_of_resident");
-                    blotters["date", rowi].Value = reader.GetDateTime("date").ToString("yyyy-MM-dd");
-                    blotters["document_request", rowi].Value = reader.GetString("doc_requested");
-                    blotters["purpose", rowi].Value = reader.GetString("purpose");
+                    docu_req["doc_req_ID", rowi].Value = reader.GetInt32("req_ID").ToString();
+                    docu_req["full_name", rowi].Value = reader.GetString("Name_of_resident");
+                    docu_req["date", rowi].Value = reader.GetDateTime("date").ToString("yyyy-MM-dd");
+                    docu_req["document_request", rowi].Value = reader.GetString("doc_requested");
+                    docu_req["purpose", rowi].Value = reader.GetString("purpose");
 
                     rowi++;
                 }
@@ -76,7 +77,7 @@ namespace WindowsFormsApp1.employee_tabs_controls
 
             try
             {
-                foreach (DataGridViewRow row in blotters.Rows)
+                foreach (DataGridViewRow row in docu_req.Rows)
                 {
                     if (!row.IsNewRow)
                     {
@@ -113,12 +114,54 @@ namespace WindowsFormsApp1.employee_tabs_controls
         {
             if (e.RowIndex >= 0)
             {
-                DataGridViewRow row = blotters.Rows[e.RowIndex];
+                DataGridViewRow row = docu_req.Rows[e.RowIndex];
 
                 name_lbl.Text = row.Cells["full_name"].Value.ToString();
                 date_lbl.Text = row.Cells["Date"].Value.ToString();
                 document_lbl.Text = row.Cells["document_request"].Value.ToString();
                 purpose_lbl.Text = row.Cells["purpose"].Value.ToString();
+            }
+        }
+
+        private void delete_btn_Click(object sender, EventArgs e)
+        {
+            if (docu_req.SelectedRows.Count > 0)
+            {
+                DataGridViewRow selectedRow = docu_req.SelectedRows[0];
+
+                int blotID = Convert.ToInt32(selectedRow.Cells["doc_req_ID"].Value);
+
+                string query = "DELETE FROM req_document_db WHERE req_ID = @doc_req_ID";
+
+                using (MySqlConnection con = new MySqlConnection(database))
+                {
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, con))
+                    {
+
+                        cmd.Parameters.AddWithValue("@doc_req_ID", blotID);
+
+                        try
+                        {
+                            con.Open();
+                            int rowsAffected = cmd.ExecuteNonQuery();
+
+                            if (rowsAffected > 0)
+                            {
+                                docu_req.Rows.Remove(selectedRow);
+                                MessageBox.Show("Row deleted successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            }
+                            else
+                            {
+                                MessageBox.Show("No rows were affected.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("An error occurred while deleting the row: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
             }
         }
     }
