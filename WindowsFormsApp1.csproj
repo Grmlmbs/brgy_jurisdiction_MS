@@ -126,6 +126,12 @@
     <Compile Include="edit_profile.Designer.cs">
       <DependentUpon>edit_profile.cs</DependentUpon>
     </Compile>
+    <Compile Include="employee tabs controls\document_req_log.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="employee tabs controls\document_req_log.Designer.cs">
+      <DependentUpon>document_req_log.cs</DependentUpon>
+    </Compile>
     <Compile Include="employee tabs controls\Datapopulator.cs" />
     <Compile Include="employee tabs controls\posted_events.cs">
       <SubType>UserControl</SubType>
@@ -151,11 +157,17 @@
     <Compile Include="employee_login.Designer.cs">
       <DependentUpon>employee_login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Events_Announcements.cs">
+    <Compile Include="Request_doc_form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Events_Announcements.Designer.cs">
-      <DependentUpon>Events_Announcements.cs</DependentUpon>
+    <Compile Include="Request_doc_form.Designer.cs">
+      <DependentUpon>Request_doc_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resident_dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resident_dashboard.Designer.cs">
+      <DependentUpon>Resident_dashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -231,6 +243,9 @@
     <EmbeddedResource Include="edit_profile.resx">
       <DependentUpon>edit_profile.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="employee tabs controls\document_req_log.resx">
+      <DependentUpon>document_req_log.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="employee tabs controls\posted_events.resx">
       <DependentUpon>posted_events.cs</DependentUpon>
     </EmbeddedResource>
@@ -243,8 +258,11 @@
     <EmbeddedResource Include="employee_login.resx">
       <DependentUpon>employee_login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Events_Announcements.resx">
-      <DependentUpon>Events_Announcements.cs</DependentUpon>
+    <EmbeddedResource Include="Request_doc_form.resx">
+      <DependentUpon>Request_doc_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resident_dashboard.resx">
+      <DependentUpon>Resident_dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

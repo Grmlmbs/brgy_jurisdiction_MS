@@ -133,7 +133,7 @@ namespace WindowsFormsApp1
                     user = new Accountdetails
                     {
                         _acc_ID = reader.GetInt32("accID"),
-                        _profile_pic = (byte[])reader["Profile_pic"],
+                        _profile_pic = reader["Profile_pic"] == DBNull.Value ? null : (byte[])reader["Profile_pic"],
                         _fname = reader.GetString("first_name"),
                         _Lname = reader.GetString("last_name"),
                         _acc_name = reader.GetString("name"),

@@ -191,17 +191,17 @@ namespace WindowsFormsApp1.employee_tabs_controls
                 unvacc_lbl.Text = Convert.ToString(unvacc);
 
                 vacc_chart.Titles.Add("Vaccination status");
-                vacc_chart.Series["Vaccination status"].Points.AddXY("Vaccinated", vacc);
-                vacc_chart.Series["Vaccination status"].Points.AddXY("Unvaccinated", unvacc);
+                vacc_chart.Series["Vaccination status"].Points.AddXY("V", vacc);
+                vacc_chart.Series["Vaccination status"].Points.AddXY("UV", unvacc);
 
                 employed_lbl.Text = Convert.ToString(employed);
                 unemployed_lbl.Text = Convert.ToString(unemp);
                 self_emp_lbl.Text = Convert.ToString(selfemp);
 
                 occu_chart .Titles.Add("Occupation");
-                occu_chart.Series["occupation"].Points.AddXY("Employed", employed);
-                occu_chart.Series["occupation"].Points.AddXY("Unemployed", unemp);
-                occu_chart.Series["occupation"].Points.AddXY("self_Employed", selfemp);
+                occu_chart.Series["occupation"].Points.AddXY("E", employed);
+                occu_chart.Series["occupation"].Points.AddXY("UE", unemp);
+                occu_chart.Series["occupation"].Points.AddXY("SE", selfemp);
 
                 no_formal_ed_lbl.Text = Convert.ToString(no_formal);
                 primary_lbl.Text = Convert.ToString(primary);
@@ -222,32 +222,32 @@ namespace WindowsFormsApp1.employee_tabs_controls
                 unreg_lbl.Text = Convert.ToString(unreg);
 
                 v_status_chart.Titles.Add("Voter");
-                v_status_chart.Series["Voter status"].Points.AddXY("Registered", reg);
-                v_status_chart.Series["Voter status"].Points.AddXY("Unregistered", unreg);
+                v_status_chart.Series["Voter status"].Points.AddXY("R", reg);
+                v_status_chart.Series["Voter status"].Points.AddXY("UR", unreg);
 
                 Tpopulation_lbl.Text = Convert.ToString(population);
                 male_count_lbl.Text = Convert.ToString(male);
                 female_count_lbl.Text = Convert.ToString(female);
 
                 sex_pchart.Titles.Add("Gender");
-                sex_pchart.Series["Gender"].Points.AddXY("Male", male);
-                sex_pchart.Series["Gender"].Points.AddXY("Female", female);
+                sex_pchart.Series["Gender"].Points.AddXY("M", male);
+                sex_pchart.Series["Gender"].Points.AddXY("F", female);
                 
                 child_lbl.Text = Convert.ToString(child);
                 adult_lbl.Text = Convert.ToString(adult);
                 senior_lbl.Text = Convert.ToString(senior);
 
                 age_chart.Titles.Add("Age distribution");
-                age_chart.Series["age"].Points.AddXY("Child", child);
-                age_chart.Series["age"].Points.AddXY("Adult", adult);
-                age_chart.Series["age"].Points.AddXY("Senior", senior);
+                age_chart.Series["age"].Points.AddXY("C", child);
+                age_chart.Series["age"].Points.AddXY("A", adult);
+                age_chart.Series["age"].Points.AddXY("S", senior);
 
                 married_lbl.Text = Convert.ToString(married);
                 single_lbl.Text = Convert.ToString(single);
 
                 m_status_chart.Titles.Add("Marital status");
-                m_status_chart.Series["Marital status"].Points.AddXY("Married", married);
-                m_status_chart.Series["Marital status"].Points.AddXY("Single", single);
+                m_status_chart.Series["Marital status"].Points.AddXY("M", married);
+                m_status_chart.Series["Marital status"].Points.AddXY("S", single);
             }
             catch (Exception ex)
             {
@@ -287,7 +287,7 @@ namespace WindowsFormsApp1.employee_tabs_controls
             datapopulator();
         }
 
-        // this is a codeblock for the searbox.
+        // this is a codeblock for the searchbox.
         private void seachbox_tbx_TextChanged(object sender, EventArgs e)
         {
             string search = searchbox_tbx.Text.ToLower();

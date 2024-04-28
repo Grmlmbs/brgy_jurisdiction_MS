@@ -132,7 +132,6 @@
             this.firstname_tbx.Name = "firstname_tbx";
             this.firstname_tbx.Size = new System.Drawing.Size(209, 19);
             this.firstname_tbx.TabIndex = 1;
-            this.firstname_tbx.TextChanged += new System.EventHandler(this.firstname_tbx_TextChanged);
             // 
             // label2
             // 
@@ -171,7 +170,6 @@
             this.lastname_tbx.Name = "lastname_tbx";
             this.lastname_tbx.Size = new System.Drawing.Size(209, 19);
             this.lastname_tbx.TabIndex = 2;
-            this.lastname_tbx.TextChanged += new System.EventHandler(this.lastname_tbx_TextChanged);
             // 
             // label4
             // 
@@ -283,7 +281,6 @@
             this.Confirmpass_tbx.PasswordChar = '*';
             this.Confirmpass_tbx.Size = new System.Drawing.Size(209, 19);
             this.Confirmpass_tbx.TabIndex = 7;
-            this.Confirmpass_tbx.TextChanged += new System.EventHandler(this.Confirmpass_tbx_TextChanged);
             // 
             // label8
             // 

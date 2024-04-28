@@ -21,9 +21,16 @@ namespace WindowsFormsApp1
         public residentDashboard(Accountdetails user)
         {
             InitializeComponent();
-            this.currentuser = user;
-            PopulateCustomListWithResidents();
-            account.Text = user._acc_name;
+            try
+            {
+                this.currentuser = user;
+                PopulateCustomListWithResidents();
+                account.Text = user._acc_name;
+            }
+            catch(Exception er)
+            {
+                MessageBox.Show(er.Message);
+            }
         }
         private void addUserControl(UserControl UserControl)
         {
@@ -166,17 +173,39 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void Notification_btn_Click(object sender, EventArgs e)
-        {
-            if(Account_drpdown_pnl.Height == 150)
-            {
-                account_btn_drpdwn_animation.Start();
-            }
-        }
-
         private void req_doc_btn_Click(object sender, EventArgs e)
         {
-            if(Account_drpdown_pnl.Height == 150)
+            Form FormBackground = new Form();
+            try
+            {
+                using (Request_doc_form open = new Request_doc_form())
+                {
+                    FormBackground.StartPosition = FormStartPosition.CenterScreen;
+                    FormBackground.FormBorderStyle = FormBorderStyle.None;
+                    FormBackground.Opacity = .70d;
+                    FormBackground.BackColor = Color.Black;
+                    FormBackground.TopMost = true;
+                    FormBackground.Width = 894;
+                    FormBackground.Height = 514;
+                    FormBackground.ShowInTaskbar = false;
+                    FormBackground.Owner = this;
+                    FormBackground.Show();
+
+                    open.Owner = FormBackground;
+                    open.ShowDialog();
+
+                    FormBackground.Dispose();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                FormBackground.Dispose();
+            }
+            if (Account_drpdown_pnl.Height == 150)
             {
                 account_btn_drpdwn_animation.Start();
             }

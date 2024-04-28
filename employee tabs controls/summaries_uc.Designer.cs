@@ -28,29 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(summaries_uc));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea13 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend13 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea14 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend14 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.Residents = new System.Windows.Forms.DataGridView();
             this.Resident_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Profile_picture = new System.Windows.Forms.DataGridViewImageColumn();
@@ -72,12 +72,6 @@
             this.vacc_status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.searchbox_tbx = new System.Windows.Forms.TextBox();
-            this.refresh_btn = new System.Windows.Forms.Button();
-            this.Register_btn = new System.Windows.Forms.Button();
-            this.update_btn = new System.Windows.Forms.Button();
-            this.delete_btn = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.occu_chart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.v_status_chart = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -87,7 +81,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.Tpopulation_lbl = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.sex_pchart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label5 = new System.Windows.Forms.Label();
             this.male_count_lbl = new System.Windows.Forms.Label();
@@ -136,17 +129,24 @@
             this.label32 = new System.Windows.Forms.Label();
             this.unvacc_lbl = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.refresh_btn = new System.Windows.Forms.Button();
+            this.Register_btn = new System.Windows.Forms.Button();
+            this.update_btn = new System.Windows.Forms.Button();
+            this.delete_btn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Residents)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.occu_chart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.v_status_chart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_status_chart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.educational_attain_chart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.age_chart)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sex_pchart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vacc_chart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Residents
@@ -318,103 +318,6 @@
             this.searchbox_tbx.Click += new System.EventHandler(this.searchbox_tbx_Click);
             this.searchbox_tbx.TextChanged += new System.EventHandler(this.seachbox_tbx_TextChanged);
             // 
-            // refresh_btn
-            // 
-            this.refresh_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
-            this.refresh_btn.FlatAppearance.BorderSize = 0;
-            this.refresh_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
-            this.refresh_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.refresh_btn.Font = new System.Drawing.Font("Malgun Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.refresh_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
-            this.refresh_btn.Image = ((System.Drawing.Image)(resources.GetObject("refresh_btn.Image")));
-            this.refresh_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.refresh_btn.Location = new System.Drawing.Point(504, 63);
-            this.refresh_btn.Margin = new System.Windows.Forms.Padding(0);
-            this.refresh_btn.Name = "refresh_btn";
-            this.refresh_btn.Size = new System.Drawing.Size(78, 25);
-            this.refresh_btn.TabIndex = 8;
-            this.refresh_btn.Text = "      Refresh";
-            this.refresh_btn.UseVisualStyleBackColor = false;
-            this.refresh_btn.Click += new System.EventHandler(this.refresh_btn_Click);
-            // 
-            // Register_btn
-            // 
-            this.Register_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
-            this.Register_btn.FlatAppearance.BorderSize = 0;
-            this.Register_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
-            this.Register_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Register_btn.Font = new System.Drawing.Font("Malgun Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Register_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
-            this.Register_btn.Image = ((System.Drawing.Image)(resources.GetObject("Register_btn.Image")));
-            this.Register_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Register_btn.Location = new System.Drawing.Point(591, 63);
-            this.Register_btn.Margin = new System.Windows.Forms.Padding(0);
-            this.Register_btn.Name = "Register_btn";
-            this.Register_btn.Size = new System.Drawing.Size(78, 25);
-            this.Register_btn.TabIndex = 7;
-            this.Register_btn.Text = "Register";
-            this.Register_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Register_btn.UseVisualStyleBackColor = false;
-            this.Register_btn.Click += new System.EventHandler(this.Register_btn_Click);
-            // 
-            // update_btn
-            // 
-            this.update_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
-            this.update_btn.FlatAppearance.BorderSize = 0;
-            this.update_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
-            this.update_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.update_btn.Font = new System.Drawing.Font("Malgun Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.update_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
-            this.update_btn.Image = ((System.Drawing.Image)(resources.GetObject("update_btn.Image")));
-            this.update_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.update_btn.Location = new System.Drawing.Point(679, 63);
-            this.update_btn.Margin = new System.Windows.Forms.Padding(0);
-            this.update_btn.Name = "update_btn";
-            this.update_btn.Size = new System.Drawing.Size(78, 25);
-            this.update_btn.TabIndex = 7;
-            this.update_btn.Text = "     Edit";
-            this.update_btn.UseVisualStyleBackColor = false;
-            this.update_btn.Click += new System.EventHandler(this.update_btn_Click);
-            // 
-            // delete_btn
-            // 
-            this.delete_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
-            this.delete_btn.FlatAppearance.BorderSize = 0;
-            this.delete_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
-            this.delete_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.delete_btn.Font = new System.Drawing.Font("Malgun Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.delete_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
-            this.delete_btn.Image = ((System.Drawing.Image)(resources.GetObject("delete_btn.Image")));
-            this.delete_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.delete_btn.Location = new System.Drawing.Point(766, 63);
-            this.delete_btn.Margin = new System.Windows.Forms.Padding(0);
-            this.delete_btn.Name = "delete_btn";
-            this.delete_btn.Size = new System.Drawing.Size(78, 25);
-            this.delete_btn.TabIndex = 7;
-            this.delete_btn.Text = "     Delete";
-            this.delete_btn.UseVisualStyleBackColor = false;
-            this.delete_btn.Click += new System.EventHandler(this.delete_btn_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(21, 63);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(20, 22);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(21, 14);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(36, 35);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 10;
-            this.pictureBox2.TabStop = false;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -422,27 +325,27 @@
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
             this.label6.Location = new System.Drawing.Point(19, 599);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(40, 17);
+            this.label6.Size = new System.Drawing.Size(65, 17);
             this.label6.TabIndex = 60;
-            this.label6.Text = "Male:";
+            this.label6.Text = "(M) Male:";
             // 
             // occu_chart
             // 
             this.occu_chart.BackColor = System.Drawing.SystemColors.Control;
-            chartArea8.BackColor = System.Drawing.SystemColors.Control;
-            chartArea8.Name = "ChartArea1";
-            this.occu_chart.ChartAreas.Add(chartArea8);
-            legend8.BackColor = System.Drawing.SystemColors.Control;
-            legend8.Name = "Legend1";
-            this.occu_chart.Legends.Add(legend8);
+            chartArea1.BackColor = System.Drawing.SystemColors.Control;
+            chartArea1.Name = "ChartArea1";
+            this.occu_chart.ChartAreas.Add(chartArea1);
+            legend1.BackColor = System.Drawing.SystemColors.Control;
+            legend1.Name = "Legend1";
+            this.occu_chart.Legends.Add(legend1);
             this.occu_chart.Location = new System.Drawing.Point(9, 663);
             this.occu_chart.Name = "occu_chart";
-            series8.ChartArea = "ChartArea1";
-            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series8.Color = System.Drawing.SystemColors.Control;
-            series8.Legend = "Legend1";
-            series8.Name = "occupation";
-            this.occu_chart.Series.Add(series8);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series1.Color = System.Drawing.SystemColors.Control;
+            series1.Legend = "Legend1";
+            series1.Name = "occupation";
+            this.occu_chart.Series.Add(series1);
             this.occu_chart.Size = new System.Drawing.Size(214, 145);
             this.occu_chart.TabIndex = 72;
             this.occu_chart.Text = "chart1";
@@ -450,20 +353,20 @@
             // v_status_chart
             // 
             this.v_status_chart.BackColor = System.Drawing.SystemColors.Control;
-            chartArea9.BackColor = System.Drawing.SystemColors.Control;
-            chartArea9.Name = "ChartArea1";
-            this.v_status_chart.ChartAreas.Add(chartArea9);
-            legend9.BackColor = System.Drawing.SystemColors.Control;
-            legend9.Name = "Legend1";
-            this.v_status_chart.Legends.Add(legend9);
+            chartArea2.BackColor = System.Drawing.SystemColors.Control;
+            chartArea2.Name = "ChartArea1";
+            this.v_status_chart.ChartAreas.Add(chartArea2);
+            legend2.BackColor = System.Drawing.SystemColors.Control;
+            legend2.Name = "Legend1";
+            this.v_status_chart.Legends.Add(legend2);
             this.v_status_chart.Location = new System.Drawing.Point(650, 434);
             this.v_status_chart.Name = "v_status_chart";
-            series9.ChartArea = "ChartArea1";
-            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series9.Color = System.Drawing.SystemColors.Control;
-            series9.Legend = "Legend1";
-            series9.Name = "Voter status";
-            this.v_status_chart.Series.Add(series9);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series2.Color = System.Drawing.SystemColors.Control;
+            series2.Legend = "Legend1";
+            series2.Name = "Voter status";
+            this.v_status_chart.Series.Add(series2);
             this.v_status_chart.Size = new System.Drawing.Size(214, 145);
             this.v_status_chart.TabIndex = 71;
             this.v_status_chart.Text = "chart1";
@@ -471,20 +374,20 @@
             // m_status_chart
             // 
             this.m_status_chart.BackColor = System.Drawing.SystemColors.Control;
-            chartArea10.BackColor = System.Drawing.SystemColors.Control;
-            chartArea10.Name = "ChartArea1";
-            this.m_status_chart.ChartAreas.Add(chartArea10);
-            legend10.BackColor = System.Drawing.SystemColors.Control;
-            legend10.Name = "Legend1";
-            this.m_status_chart.Legends.Add(legend10);
+            chartArea3.BackColor = System.Drawing.SystemColors.Control;
+            chartArea3.Name = "ChartArea1";
+            this.m_status_chart.ChartAreas.Add(chartArea3);
+            legend3.BackColor = System.Drawing.SystemColors.Control;
+            legend3.Name = "Legend1";
+            this.m_status_chart.Legends.Add(legend3);
             this.m_status_chart.Location = new System.Drawing.Point(430, 434);
             this.m_status_chart.Name = "m_status_chart";
-            series10.ChartArea = "ChartArea1";
-            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series10.Color = System.Drawing.SystemColors.Control;
-            series10.Legend = "Legend1";
-            series10.Name = "Marital status";
-            this.m_status_chart.Series.Add(series10);
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series3.Color = System.Drawing.SystemColors.Control;
+            series3.Legend = "Legend1";
+            series3.Name = "Marital status";
+            this.m_status_chart.Series.Add(series3);
             this.m_status_chart.Size = new System.Drawing.Size(214, 145);
             this.m_status_chart.TabIndex = 75;
             this.m_status_chart.Text = "chart1";
@@ -492,20 +395,20 @@
             // educational_attain_chart
             // 
             this.educational_attain_chart.BackColor = System.Drawing.SystemColors.Control;
-            chartArea11.BackColor = System.Drawing.SystemColors.Control;
-            chartArea11.Name = "ChartArea1";
-            this.educational_attain_chart.ChartAreas.Add(chartArea11);
-            legend11.BackColor = System.Drawing.SystemColors.Control;
-            legend11.Name = "Legend1";
-            this.educational_attain_chart.Legends.Add(legend11);
+            chartArea4.BackColor = System.Drawing.SystemColors.Control;
+            chartArea4.Name = "ChartArea1";
+            this.educational_attain_chart.ChartAreas.Add(chartArea4);
+            legend4.BackColor = System.Drawing.SystemColors.Control;
+            legend4.Name = "Legend1";
+            this.educational_attain_chart.Legends.Add(legend4);
             this.educational_attain_chart.Location = new System.Drawing.Point(651, 663);
             this.educational_attain_chart.Name = "educational_attain_chart";
-            series11.ChartArea = "ChartArea1";
-            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series11.Color = System.Drawing.SystemColors.Control;
-            series11.Legend = "Legend1";
-            series11.Name = "educational attainment";
-            this.educational_attain_chart.Series.Add(series11);
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series4.Color = System.Drawing.SystemColors.Control;
+            series4.Legend = "Legend1";
+            series4.Name = "educational attainment";
+            this.educational_attain_chart.Series.Add(series4);
             this.educational_attain_chart.Size = new System.Drawing.Size(214, 145);
             this.educational_attain_chart.TabIndex = 74;
             this.educational_attain_chart.Text = "chart1";
@@ -513,20 +416,20 @@
             // age_chart
             // 
             this.age_chart.BackColor = System.Drawing.SystemColors.Control;
-            chartArea12.BackColor = System.Drawing.SystemColors.Control;
-            chartArea12.Name = "ChartArea1";
-            this.age_chart.ChartAreas.Add(chartArea12);
-            legend12.BackColor = System.Drawing.SystemColors.Control;
-            legend12.Name = "Legend1";
-            this.age_chart.Legends.Add(legend12);
+            chartArea5.BackColor = System.Drawing.SystemColors.Control;
+            chartArea5.Name = "ChartArea1";
+            this.age_chart.ChartAreas.Add(chartArea5);
+            legend5.BackColor = System.Drawing.SystemColors.Control;
+            legend5.Name = "Legend1";
+            this.age_chart.Legends.Add(legend5);
             this.age_chart.Location = new System.Drawing.Point(223, 434);
             this.age_chart.Name = "age_chart";
-            series12.ChartArea = "ChartArea1";
-            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series12.Color = System.Drawing.SystemColors.Control;
-            series12.Legend = "Legend1";
-            series12.Name = "age";
-            this.age_chart.Series.Add(series12);
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series5.Color = System.Drawing.SystemColors.Control;
+            series5.Legend = "Legend1";
+            series5.Name = "age";
+            this.age_chart.Series.Add(series5);
             this.age_chart.Size = new System.Drawing.Size(214, 145);
             this.age_chart.TabIndex = 70;
             this.age_chart.Text = "chart1";
@@ -564,43 +467,33 @@
             this.Tpopulation_lbl.Text = "00000";
             this.Tpopulation_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(21, 261);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(36, 35);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 56;
-            this.pictureBox3.TabStop = false;
-            // 
             // sex_pchart
             // 
             this.sex_pchart.BackColor = System.Drawing.SystemColors.Control;
             this.sex_pchart.BorderlineColor = System.Drawing.SystemColors.Control;
-            chartArea13.BackColor = System.Drawing.SystemColors.Control;
-            chartArea13.Name = "ChartArea1";
-            this.sex_pchart.ChartAreas.Add(chartArea13);
-            legend13.BackColor = System.Drawing.SystemColors.Control;
-            legend13.Name = "Legend1";
-            this.sex_pchart.Legends.Add(legend13);
+            chartArea6.BackColor = System.Drawing.SystemColors.Control;
+            chartArea6.Name = "ChartArea1";
+            this.sex_pchart.ChartAreas.Add(chartArea6);
+            legend6.BackColor = System.Drawing.SystemColors.Control;
+            legend6.Name = "Legend1";
+            this.sex_pchart.Legends.Add(legend6);
             this.sex_pchart.Location = new System.Drawing.Point(11, 411);
             this.sex_pchart.Name = "sex_pchart";
-            series13.ChartArea = "ChartArea1";
-            series13.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series13.Color = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
-            series13.Font = new System.Drawing.Font("Malgun Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series13.LabelForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
-            series13.Legend = "Legend1";
-            series13.Name = "Gender";
-            this.sex_pchart.Series.Add(series13);
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series6.Color = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
+            series6.Font = new System.Drawing.Font("Malgun Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series6.LabelForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
+            series6.Legend = "Legend1";
+            series6.Name = "Gender";
+            this.sex_pchart.Series.Add(series6);
             this.sex_pchart.Size = new System.Drawing.Size(222, 168);
             this.sex_pchart.TabIndex = 57;
             this.sex_pchart.Text = "chart1";
-            title2.Font = new System.Drawing.Font("Malgun Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
-            title2.Name = "Gender distribution";
-            this.sex_pchart.Titles.Add(title2);
+            title1.Font = new System.Drawing.Font("Malgun Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
+            title1.Name = "Gender distribution";
+            this.sex_pchart.Titles.Add(title1);
             // 
             // label5
             // 
@@ -618,7 +511,7 @@
             this.male_count_lbl.AutoSize = true;
             this.male_count_lbl.Font = new System.Drawing.Font("Agency FB", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.male_count_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
-            this.male_count_lbl.Location = new System.Drawing.Point(70, 598);
+            this.male_count_lbl.Location = new System.Drawing.Point(90, 598);
             this.male_count_lbl.Name = "male_count_lbl";
             this.male_count_lbl.Size = new System.Drawing.Size(38, 17);
             this.male_count_lbl.TabIndex = 58;
@@ -629,7 +522,7 @@
             this.female_count_lbl.AutoSize = true;
             this.female_count_lbl.Font = new System.Drawing.Font("Agency FB", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.female_count_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
-            this.female_count_lbl.Location = new System.Drawing.Point(70, 616);
+            this.female_count_lbl.Location = new System.Drawing.Point(90, 616);
             this.female_count_lbl.Name = "female_count_lbl";
             this.female_count_lbl.Size = new System.Drawing.Size(38, 17);
             this.female_count_lbl.TabIndex = 61;
@@ -642,9 +535,9 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
             this.label4.Location = new System.Drawing.Point(19, 616);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 17);
+            this.label4.Size = new System.Drawing.Size(71, 17);
             this.label4.TabIndex = 62;
-            this.label4.Text = "Female:";
+            this.label4.Text = "(F) Female:";
             // 
             // label11
             // 
@@ -662,7 +555,7 @@
             this.child_lbl.AutoSize = true;
             this.child_lbl.Font = new System.Drawing.Font("Agency FB", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.child_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
-            this.child_lbl.Location = new System.Drawing.Point(282, 599);
+            this.child_lbl.Location = new System.Drawing.Point(307, 600);
             this.child_lbl.Name = "child_lbl";
             this.child_lbl.Size = new System.Drawing.Size(38, 17);
             this.child_lbl.TabIndex = 63;
@@ -675,16 +568,16 @@
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
             this.label9.Location = new System.Drawing.Point(236, 599);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(41, 17);
+            this.label9.Size = new System.Drawing.Size(62, 17);
             this.label9.TabIndex = 65;
-            this.label9.Text = "Child:";
+            this.label9.Text = "(C) Child:";
             // 
             // adult_lbl
             // 
             this.adult_lbl.AutoSize = true;
             this.adult_lbl.Font = new System.Drawing.Font("Agency FB", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.adult_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
-            this.adult_lbl.Location = new System.Drawing.Point(282, 616);
+            this.adult_lbl.Location = new System.Drawing.Point(307, 617);
             this.adult_lbl.Name = "adult_lbl";
             this.adult_lbl.Size = new System.Drawing.Size(38, 17);
             this.adult_lbl.TabIndex = 66;
@@ -697,16 +590,16 @@
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
             this.label7.Location = new System.Drawing.Point(236, 616);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(43, 17);
+            this.label7.Size = new System.Drawing.Size(65, 17);
             this.label7.TabIndex = 67;
-            this.label7.Text = "Adult:";
+            this.label7.Text = "(A) Adult:";
             // 
             // senior_lbl
             // 
             this.senior_lbl.AutoSize = true;
             this.senior_lbl.Font = new System.Drawing.Font("Agency FB", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.senior_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
-            this.senior_lbl.Location = new System.Drawing.Point(282, 632);
+            this.senior_lbl.Location = new System.Drawing.Point(307, 633);
             this.senior_lbl.Name = "senior_lbl";
             this.senior_lbl.Size = new System.Drawing.Size(38, 17);
             this.senior_lbl.TabIndex = 68;
@@ -719,27 +612,27 @@
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
             this.label12.Location = new System.Drawing.Point(236, 633);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(49, 17);
+            this.label12.Size = new System.Drawing.Size(69, 17);
             this.label12.TabIndex = 69;
-            this.label12.Text = "Senior:";
+            this.label12.Text = "(S) Senior:";
             // 
             // vacc_chart
             // 
             this.vacc_chart.BackColor = System.Drawing.SystemColors.Control;
-            chartArea14.BackColor = System.Drawing.SystemColors.Control;
-            chartArea14.Name = "ChartArea1";
-            this.vacc_chart.ChartAreas.Add(chartArea14);
-            legend14.BackColor = System.Drawing.SystemColors.Control;
-            legend14.Name = "Legend1";
-            this.vacc_chart.Legends.Add(legend14);
+            chartArea7.BackColor = System.Drawing.SystemColors.Control;
+            chartArea7.Name = "ChartArea1";
+            this.vacc_chart.ChartAreas.Add(chartArea7);
+            legend7.BackColor = System.Drawing.SystemColors.Control;
+            legend7.Name = "Legend1";
+            this.vacc_chart.Legends.Add(legend7);
             this.vacc_chart.Location = new System.Drawing.Point(207, 663);
             this.vacc_chart.Name = "vacc_chart";
-            series14.ChartArea = "ChartArea1";
-            series14.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series14.Color = System.Drawing.SystemColors.Control;
-            series14.Legend = "Legend1";
-            series14.Name = "Vaccination status";
-            this.vacc_chart.Series.Add(series14);
+            series7.ChartArea = "ChartArea1";
+            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series7.Color = System.Drawing.SystemColors.Control;
+            series7.Legend = "Legend1";
+            series7.Name = "Vaccination status";
+            this.vacc_chart.Series.Add(series7);
             this.vacc_chart.Size = new System.Drawing.Size(214, 145);
             this.vacc_chart.TabIndex = 73;
             this.vacc_chart.Text = "chart1";
@@ -773,9 +666,9 @@
             this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
             this.label15.Location = new System.Drawing.Point(445, 601);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(58, 17);
+            this.label15.Size = new System.Drawing.Size(83, 17);
             this.label15.TabIndex = 78;
-            this.label15.Text = "Married:";
+            this.label15.Text = "(M) Married:";
             // 
             // single_lbl
             // 
@@ -795,9 +688,9 @@
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
             this.label13.Location = new System.Drawing.Point(445, 618);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(47, 17);
+            this.label13.Size = new System.Drawing.Size(67, 17);
             this.label13.TabIndex = 80;
-            this.label13.Text = "Single:";
+            this.label13.Text = "(S) Single:";
             // 
             // label18
             // 
@@ -815,7 +708,7 @@
             this.reg_lbl.AutoSize = true;
             this.reg_lbl.Font = new System.Drawing.Font("Agency FB", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.reg_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
-            this.reg_lbl.Location = new System.Drawing.Point(716, 601);
+            this.reg_lbl.Location = new System.Drawing.Point(776, 601);
             this.reg_lbl.Name = "reg_lbl";
             this.reg_lbl.Size = new System.Drawing.Size(38, 17);
             this.reg_lbl.TabIndex = 81;
@@ -826,18 +719,18 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
-            this.label14.Location = new System.Drawing.Point(655, 601);
+            this.label14.Location = new System.Drawing.Point(662, 601);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(58, 17);
+            this.label14.Size = new System.Drawing.Size(95, 17);
             this.label14.TabIndex = 83;
-            this.label14.Text = "Married:";
+            this.label14.Text = "(R) Registered:";
             // 
             // unreg_lbl
             // 
             this.unreg_lbl.AutoSize = true;
             this.unreg_lbl.Font = new System.Drawing.Font("Agency FB", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.unreg_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
-            this.unreg_lbl.Location = new System.Drawing.Point(716, 618);
+            this.unreg_lbl.Location = new System.Drawing.Point(776, 618);
             this.unreg_lbl.Name = "unreg_lbl";
             this.unreg_lbl.Size = new System.Drawing.Size(38, 17);
             this.unreg_lbl.TabIndex = 84;
@@ -848,11 +741,11 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
-            this.label8.Location = new System.Drawing.Point(655, 618);
+            this.label8.Location = new System.Drawing.Point(662, 618);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(47, 17);
+            this.label8.Size = new System.Drawing.Size(118, 17);
             this.label8.TabIndex = 85;
-            this.label8.Text = "Single:";
+            this.label8.Text = "(UR) Unregistered:";
             // 
             // label21
             // 
@@ -1013,7 +906,7 @@
             this.employed_lbl.AutoSize = true;
             this.employed_lbl.Font = new System.Drawing.Font("Agency FB", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.employed_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
-            this.employed_lbl.Location = new System.Drawing.Point(114, 831);
+            this.employed_lbl.Location = new System.Drawing.Point(151, 831);
             this.employed_lbl.Name = "employed_lbl";
             this.employed_lbl.Size = new System.Drawing.Size(38, 17);
             this.employed_lbl.TabIndex = 100;
@@ -1026,16 +919,16 @@
             this.label26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
             this.label26.Location = new System.Drawing.Point(15, 849);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(86, 17);
+            this.label26.Size = new System.Drawing.Size(115, 17);
             this.label26.TabIndex = 103;
-            this.label26.Text = "Unemployed:";
+            this.label26.Text = "(UE) Unemployed:";
             // 
             // self_emp_lbl
             // 
             this.self_emp_lbl.AutoSize = true;
             this.self_emp_lbl.Font = new System.Drawing.Font("Agency FB", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.self_emp_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
-            this.self_emp_lbl.Location = new System.Drawing.Point(114, 865);
+            this.self_emp_lbl.Location = new System.Drawing.Point(151, 865);
             this.self_emp_lbl.Name = "self_emp_lbl";
             this.self_emp_lbl.Size = new System.Drawing.Size(38, 17);
             this.self_emp_lbl.TabIndex = 99;
@@ -1046,7 +939,7 @@
             this.unemployed_lbl.AutoSize = true;
             this.unemployed_lbl.Font = new System.Drawing.Font("Agency FB", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.unemployed_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
-            this.unemployed_lbl.Location = new System.Drawing.Point(114, 848);
+            this.unemployed_lbl.Location = new System.Drawing.Point(151, 848);
             this.unemployed_lbl.Name = "unemployed_lbl";
             this.unemployed_lbl.Size = new System.Drawing.Size(38, 17);
             this.unemployed_lbl.TabIndex = 104;
@@ -1059,20 +952,20 @@
             this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
             this.label20.Location = new System.Drawing.Point(15, 832);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(69, 17);
+            this.label20.Size = new System.Drawing.Size(89, 17);
             this.label20.TabIndex = 102;
-            this.label20.Text = "Employed:";
+            this.label20.Text = "(E) Employed:";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
-            this.label16.Location = new System.Drawing.Point(15, 866);
+            this.label16.Location = new System.Drawing.Point(15, 865);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(95, 17);
+            this.label16.Size = new System.Drawing.Size(134, 17);
             this.label16.TabIndex = 105;
-            this.label16.Text = "Self-employed:";
+            this.label16.Text = "(SEM) Self-employed:";
             // 
             // label34
             // 
@@ -1090,7 +983,7 @@
             this.vacc_lbl.AutoSize = true;
             this.vacc_lbl.Font = new System.Drawing.Font("Agency FB", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.vacc_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
-            this.vacc_lbl.Location = new System.Drawing.Point(316, 832);
+            this.vacc_lbl.Location = new System.Drawing.Point(346, 833);
             this.vacc_lbl.Name = "vacc_lbl";
             this.vacc_lbl.Size = new System.Drawing.Size(38, 17);
             this.vacc_lbl.TabIndex = 106;
@@ -1103,16 +996,16 @@
             this.label32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
             this.label32.Location = new System.Drawing.Point(220, 850);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(90, 17);
+            this.label32.Size = new System.Drawing.Size(120, 17);
             this.label32.TabIndex = 109;
-            this.label32.Text = "Unvaccinated:";
+            this.label32.Text = "(UV) Unvaccinated:";
             // 
             // unvacc_lbl
             // 
             this.unvacc_lbl.AutoSize = true;
             this.unvacc_lbl.Font = new System.Drawing.Font("Agency FB", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.unvacc_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
-            this.unvacc_lbl.Location = new System.Drawing.Point(316, 849);
+            this.unvacc_lbl.Location = new System.Drawing.Point(346, 850);
             this.unvacc_lbl.Name = "unvacc_lbl";
             this.unvacc_lbl.Size = new System.Drawing.Size(38, 17);
             this.unvacc_lbl.TabIndex = 110;
@@ -1125,9 +1018,116 @@
             this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
             this.label24.Location = new System.Drawing.Point(220, 833);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(75, 17);
+            this.label24.Size = new System.Drawing.Size(96, 17);
             this.label24.TabIndex = 108;
-            this.label24.Text = "Vaccinated:";
+            this.label24.Text = "(V) Vaccinated:";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(21, 261);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(36, 35);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 56;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(21, 14);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(36, 35);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 10;
+            this.pictureBox2.TabStop = false;
+            // 
+            // refresh_btn
+            // 
+            this.refresh_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
+            this.refresh_btn.FlatAppearance.BorderSize = 0;
+            this.refresh_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
+            this.refresh_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.refresh_btn.Font = new System.Drawing.Font("Malgun Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refresh_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
+            this.refresh_btn.Image = ((System.Drawing.Image)(resources.GetObject("refresh_btn.Image")));
+            this.refresh_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.refresh_btn.Location = new System.Drawing.Point(504, 63);
+            this.refresh_btn.Margin = new System.Windows.Forms.Padding(0);
+            this.refresh_btn.Name = "refresh_btn";
+            this.refresh_btn.Size = new System.Drawing.Size(78, 25);
+            this.refresh_btn.TabIndex = 8;
+            this.refresh_btn.Text = "      Refresh";
+            this.refresh_btn.UseVisualStyleBackColor = false;
+            this.refresh_btn.Click += new System.EventHandler(this.refresh_btn_Click);
+            // 
+            // Register_btn
+            // 
+            this.Register_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
+            this.Register_btn.FlatAppearance.BorderSize = 0;
+            this.Register_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
+            this.Register_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Register_btn.Font = new System.Drawing.Font("Malgun Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Register_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
+            this.Register_btn.Image = ((System.Drawing.Image)(resources.GetObject("Register_btn.Image")));
+            this.Register_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Register_btn.Location = new System.Drawing.Point(591, 63);
+            this.Register_btn.Margin = new System.Windows.Forms.Padding(0);
+            this.Register_btn.Name = "Register_btn";
+            this.Register_btn.Size = new System.Drawing.Size(78, 25);
+            this.Register_btn.TabIndex = 7;
+            this.Register_btn.Text = "Register";
+            this.Register_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Register_btn.UseVisualStyleBackColor = false;
+            this.Register_btn.Click += new System.EventHandler(this.Register_btn_Click);
+            // 
+            // update_btn
+            // 
+            this.update_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
+            this.update_btn.FlatAppearance.BorderSize = 0;
+            this.update_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
+            this.update_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.update_btn.Font = new System.Drawing.Font("Malgun Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.update_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
+            this.update_btn.Image = ((System.Drawing.Image)(resources.GetObject("update_btn.Image")));
+            this.update_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.update_btn.Location = new System.Drawing.Point(679, 63);
+            this.update_btn.Margin = new System.Windows.Forms.Padding(0);
+            this.update_btn.Name = "update_btn";
+            this.update_btn.Size = new System.Drawing.Size(78, 25);
+            this.update_btn.TabIndex = 7;
+            this.update_btn.Text = "     Edit";
+            this.update_btn.UseVisualStyleBackColor = false;
+            this.update_btn.Click += new System.EventHandler(this.update_btn_Click);
+            // 
+            // delete_btn
+            // 
+            this.delete_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
+            this.delete_btn.FlatAppearance.BorderSize = 0;
+            this.delete_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
+            this.delete_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.delete_btn.Font = new System.Drawing.Font("Malgun Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.delete_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
+            this.delete_btn.Image = ((System.Drawing.Image)(resources.GetObject("delete_btn.Image")));
+            this.delete_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.delete_btn.Location = new System.Drawing.Point(766, 63);
+            this.delete_btn.Margin = new System.Windows.Forms.Padding(0);
+            this.delete_btn.Name = "delete_btn";
+            this.delete_btn.Size = new System.Drawing.Size(78, 25);
+            this.delete_btn.TabIndex = 7;
+            this.delete_btn.Text = "     Delete";
+            this.delete_btn.UseVisualStyleBackColor = false;
+            this.delete_btn.Click += new System.EventHandler(this.delete_btn_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(21, 63);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(20, 22);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
             // 
             // summaries_uc
             // 
@@ -1204,16 +1204,16 @@
             this.Size = new System.Drawing.Size(872, 911);
             this.Load += new System.EventHandler(this.summaries_uc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Residents)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.occu_chart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.v_status_chart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_status_chart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.educational_attain_chart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.age_chart)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sex_pchart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vacc_chart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

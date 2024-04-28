@@ -130,10 +130,11 @@ namespace WindowsFormsApp1
             accounttabexpand.Start();
             accPanel.BringToFront();
         }
-
+        // this will open the user control for viewing document request logs.
         private void button1_Click_1(object sender, EventArgs e)
         {
-
+            document_req_log open = new document_req_log();
+            addUserControl(open);
         }
 
         private void blotters_btn_Click(object sender, EventArgs e)

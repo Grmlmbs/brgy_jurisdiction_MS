@@ -32,6 +32,10 @@ namespace WindowsFormsApp1.resident_tabs
                         profile_pic_pbx.Image = Image.FromStream(ms);
                     }
                 }
+                else
+                {
+                    profile_pic_pbx.Image = Properties.Resources.profile_dflt;
+                }
                 res_acc_name.Text = user._acc_name;
                 res_acc_pass.Text = user._acc_pass;
                 res_acc_phone.Text = Convert.ToString(user._phone_no);

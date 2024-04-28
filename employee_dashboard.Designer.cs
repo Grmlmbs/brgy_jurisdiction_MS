@@ -29,10 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.accName_btn = new System.Windows.Forms.Button();
             this.logOut_btn = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.inbox_btn = new System.Windows.Forms.Button();
+            this.abt_account_btn = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.makeAnsmnt_btn = new System.Windows.Forms.Button();
             this.container = new System.Windows.Forms.FlowLayoutPanel();
@@ -50,6 +49,7 @@
             this.posted_eve_btn = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.gradientPanel1 = new WindowsFormsApp1.GradientPanel();
+            this.accName_btn = new System.Windows.Forms.Button();
             this.panel6.SuspendLayout();
             this.panel8.SuspendLayout();
             this.container.SuspendLayout();
@@ -60,23 +60,6 @@
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // accName_btn
-            // 
-            this.accName_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
-            this.accName_btn.FlatAppearance.BorderSize = 0;
-            this.accName_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
-            this.accName_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.accName_btn.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accName_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
-            this.accName_btn.Location = new System.Drawing.Point(0, 0);
-            this.accName_btn.Margin = new System.Windows.Forms.Padding(0);
-            this.accName_btn.Name = "accName_btn";
-            this.accName_btn.Size = new System.Drawing.Size(200, 50);
-            this.accName_btn.TabIndex = 0;
-            this.accName_btn.Text = "Account Name";
-            this.accName_btn.UseVisualStyleBackColor = false;
-            this.accName_btn.Click += new System.EventHandler(this.accName_btn_Click);
             // 
             // logOut_btn
             // 
@@ -98,7 +81,7 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.inbox_btn);
+            this.panel6.Controls.Add(this.abt_account_btn);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 50);
             this.panel6.Margin = new System.Windows.Forms.Padding(0);
@@ -106,22 +89,22 @@
             this.panel6.Size = new System.Drawing.Size(200, 50);
             this.panel6.TabIndex = 3;
             // 
-            // inbox_btn
+            // abt_account_btn
             // 
-            this.inbox_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
-            this.inbox_btn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.inbox_btn.FlatAppearance.BorderSize = 0;
-            this.inbox_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
-            this.inbox_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.inbox_btn.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inbox_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
-            this.inbox_btn.Location = new System.Drawing.Point(0, 0);
-            this.inbox_btn.Margin = new System.Windows.Forms.Padding(0);
-            this.inbox_btn.Name = "inbox_btn";
-            this.inbox_btn.Size = new System.Drawing.Size(200, 50);
-            this.inbox_btn.TabIndex = 0;
-            this.inbox_btn.Text = "Inbox";
-            this.inbox_btn.UseVisualStyleBackColor = false;
+            this.abt_account_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
+            this.abt_account_btn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.abt_account_btn.FlatAppearance.BorderSize = 0;
+            this.abt_account_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
+            this.abt_account_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.abt_account_btn.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.abt_account_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
+            this.abt_account_btn.Location = new System.Drawing.Point(0, 0);
+            this.abt_account_btn.Margin = new System.Windows.Forms.Padding(0);
+            this.abt_account_btn.Name = "abt_account_btn";
+            this.abt_account_btn.Size = new System.Drawing.Size(200, 50);
+            this.abt_account_btn.TabIndex = 0;
+            this.abt_account_btn.Text = "About acount";
+            this.abt_account_btn.UseVisualStyleBackColor = false;
             // 
             // panel8
             // 
@@ -202,7 +185,7 @@
             this.docReq_btn.Name = "docReq_btn";
             this.docReq_btn.Size = new System.Drawing.Size(170, 50);
             this.docReq_btn.TabIndex = 3;
-            this.docReq_btn.Text = "Document Request";
+            this.docReq_btn.Text = "Document Request log";
             this.docReq_btn.UseVisualStyleBackColor = false;
             this.docReq_btn.Click += new System.EventHandler(this.button1_Click_1);
             // 
@@ -330,6 +313,23 @@
             this.gradientPanel1.Size = new System.Drawing.Size(878, 26);
             this.gradientPanel1.TabIndex = 5;
             // 
+            // accName_btn
+            // 
+            this.accName_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
+            this.accName_btn.FlatAppearance.BorderSize = 0;
+            this.accName_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
+            this.accName_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.accName_btn.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accName_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(237)))), ((int)(((byte)(207)))));
+            this.accName_btn.Location = new System.Drawing.Point(0, 0);
+            this.accName_btn.Margin = new System.Windows.Forms.Padding(0);
+            this.accName_btn.Name = "accName_btn";
+            this.accName_btn.Size = new System.Drawing.Size(200, 50);
+            this.accName_btn.TabIndex = 0;
+            this.accName_btn.Text = "Account Name";
+            this.accName_btn.UseVisualStyleBackColor = false;
+            this.accName_btn.Click += new System.EventHandler(this.accName_btn_Click);
+            // 
             // empDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -340,6 +340,7 @@
             this.Controls.Add(this.gradientPanel1);
             this.Controls.Add(this.panel2);
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "empDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Employee\'s Dashboard";
@@ -359,12 +360,11 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button accName_btn;
         private System.Windows.Forms.Button logOut_btn;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Button makeAnsmnt_btn;
-        private System.Windows.Forms.Button inbox_btn;
+        private System.Windows.Forms.Button abt_account_btn;
         private System.Windows.Forms.FlowLayoutPanel container;
         private System.Windows.Forms.Panel accPanel;
         private System.Windows.Forms.Timer accounttabexpand;
@@ -380,5 +380,6 @@
         private System.Windows.Forms.Button posted_eve_btn;
         private GradientPanel gradientPanel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Button accName_btn;
     }
 }

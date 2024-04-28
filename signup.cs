@@ -151,11 +151,6 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void firstname_tbx_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void animation_Tick(object sender, EventArgs e)
         {
             if (Opacity >= 1.0)
@@ -166,16 +161,6 @@ namespace WindowsFormsApp1
             {
                 Opacity += .03;
             }
-        }
-
-        private void lastname_tbx_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Confirmpass_tbx_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void age_ValueChanged(object sender, EventArgs e)
